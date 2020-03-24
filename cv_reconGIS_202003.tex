@@ -1,0 +1,288 @@
+\documentclass[letterpaper]{article}
+    \usepackage[margin=3in]{geometry}
+    \usepackage{fullpage}
+    \usepackage{textcomp}
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{hyperref}
+    \usepackage{charter}
+
+    % insert QR code
+    %   https://tex.stackexchange.com/questions/66231/how-to-put-a-picture-to-the-top-right-of-a-page
+    \usepackage{graphicx} 
+    \usepackage{eso-pic} 
+
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % CV type: DATACV or GISCV
+    \newif\ifQRCODE
+    %\QRCODEtrue
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % CV type: DATACV or GISCV
+    \newif\ifDATACV
+    \newif\ifGISCV
+
+    %\DATACVtrue
+    \GISCVtrue
+
+    \ifDATACV
+        \newcommand{\CVjobTitle}{Data Analyst}
+    \else \ifGISCV
+        \newcommand{\CVjobTitle}{GIS Analyst}
+    \else
+        \GenericError{}{ERROR: no CV type defined}{}{}%
+    \fi \fi
+
+    %\renewcommand{\CVjobTitle}{Data Scientist}
+
+    \hypersetup{
+        pdfauthor={Andrew W. Ross},
+        pdftitle={Andrew W. Ross - \CVjobTitle},
+        pdfsubject={\CVjobTitle}
+    }
+
+\hyphenation{
+    analysis 
+    notebooks
+    procedures
+    }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\ifQRCODE
+    \AddToShipoutPicture*
+        {\put(496,715)
+            {\includegraphics[width=1.7cm,height=1.7cm]
+            {linkedin-qr3.png}}}
+\fi
+
+\vspace*{-19pt}
+\begin{center}
+	{\Huge \scshape {Andrew W.~Ross}}\\
+    \vspace{1mm}
+    {\LARGE \sc {\CVjobTitle}}\\
+    \input private.tex
+
+\end{center}
+\vspace*{-4pt}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+
+\textbf{BC Transit} 
+    \hfill Victoria, Canada\\
+    \ifDATACV
+        \textit{Data Analyst} 
+    \else \ifGISCV
+        \textit{GIS Analyst} 
+    \fi \fi
+    \hfill January 2013 - October 2018\\
+\vspace{2mm}
+
+Produced maps, posters, and other GIS products fro planners and administrators.
+Identified ongoing planning and administrative requirements, 
+Sourced and
+developed relevant data sets and provided statistical and spatial analysis to
+create operational products. Specifically:
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt
+%    \item Received 2015 corporate Recognizing Excellence and Values award for
+%    helping to create cross-departmental team that analyzed and established
+%    quality measures for data collection that significantly improved data
+%    quality.
+
+%    \item Using Python implemented reporting system dashboard to analyze
+%    regional transport ridership, processing 150,000+ transactions per day from
+%    a 700+ vehicle fleet
+    
+    \item Developed performance metrics system in Python to monitor security and
+    quality of regional reporting systems
+\end{itemize}
+
+
+\textbf{World Bank} 
+    \hfill Washington, D.C.\\
+    \textit{Data Consultant} 
+    \hfill October 2011 - December 2012\\
+\vspace{2mm}
+
+Deployed data sharing platforms to multiple countries to aid with national
+disaster risk mitigation efforts. Identified and cleaned national data sets, 
+and ensured standardized metadata records.
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt
+    \item Helped government ministries planning for disaster mitigation by:
+    defining data needs with project stakeholders, consolidating demographic,
+    socioeconomic, and geographic data sets, and building standardized
+    geodatabases
+    
+    \item Developed data cleaning and database uploading tools in Python to 
+    standardize data cleaning and data management processes
+\end{itemize}
+
+
+\textbf{Development Alternatives Inc.~(DAI)} 
+    \hfill Washington, D.C.\\
+    \ifDATACV
+        \textit{Principal Development Specialist} 
+    \else \ifGISCV
+        % \textit{Principal GIS Development Specialist} 
+        \textit{GIS Analyst} 
+    \fi \fi
+    \hfill December 2006 - July 2010\\
+\vspace{2mm}
+
+Visited field offices to create, train, and assess data collection and analysis
+field units.
+\vspace{-1mm}
+\begin{itemize} \itemsep 0pt
+%    \item Promoted from
+%        \ifDATACV
+%            Data Engineer to Principal Development Specialist
+%        \else \ifGISCV
+%            GIS Engineer to Principal GIS Development Specialist
+%        \fi \fi
+
+%    \item Led development team for USAID's Pakistan activity tracking system (a
+%    web-based PHP application) that consolidated project information on
+%    thousands of partner and contractor activities in the region
+
+%    \item Designed and built Python and GoogleEarth mapping system which
+%    effectively visualized USAID's partnerships with corporations world wide for
+%    the Global Development Alliance (GDA) project
+
+    \item Developed prototype national mapping and statistical research tool to
+    collect and map statistics for Pakistan's national and regional
+    legislatures
+
+\end{itemize}
+\vspace{2mm}
+
+
+
+%==== Skills  ====%
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l p{5.2in} }
+\ifDATACV
+        Python: &
+            Pandas, Numpy, and Scikit-learn, and dashboards / visualizations with
+            Jupyter notebooks \\
+        Data analysis: &                 
+            Presenting data and creating exploratory dashboards with Tableau \\
+        Databases: & 
+            Oracle and PostgreSQL relational databases, with advanced use of SQL,
+            stored procedures, and complex queries \\
+        ETL: & 
+            Developing data pipelines and processes for cleaning, verifying,
+            and managing large data sets in Python\\
+\else \ifGISCV
+        GIS:& 
+            ESRI ArcGIS \& ArcMap, QGIS, Safe FME for developing spatial data
+            pipelines. \\
+        Python:& 
+            Geoprocessing ArcGIS / ArcPy scripts and toolbox development, Jupyter notebooks 
+            for analyzing data with Pandas, Numpy, and Scikit-learn \\
+        Databases:& 
+            Oracle spatial and PostgreSQL, with advanced experience of SQL,
+            stored procedures, and complex queries \\
+\fi \fi
+        Communication: &
+            Presented workshops and training seminars summarizing technical
+            processes and analysis to technical and non-technical audiences \\
+%        Collaboration: &
+%            Engaged with planners, clients, and partners to identify data
+%            needs, plan data collection projects, refine analysis and models
+        Customer service: &
+            Engaged with planners, clients, and partners to identify data
+            needs, plan data collection projects, and develop GIS products
+\end{tabular}
+
+\vspace{8mm}
+
+
+%==== Education ====%
+\header{Education}
+    \textbf{Queen\textquotesingle{}s University}
+        \hfill Kingston, Canada\\
+        MSc.~Computer Science\\
+        \vspace{2mm}
+
+    \textbf{University of Ottawa}
+        \hfill Ottawa, Canada\\
+        Graduate Diploma International Development\\
+        \vspace{2mm}
+
+    \textbf{Queen\textquotesingle{}s University}
+        \hfill Kingston, Canada\\
+        BSc.~Psychology \& Computer Science\\
+        \vspace{2mm}
+
+\end{document}
+
+\iffalse
+\fi
+
+

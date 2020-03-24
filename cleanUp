@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# clean up directory for tex output
+#
+# 2020.03.24
+
+rm *.log *.out *.aux *.pdf
+
+
