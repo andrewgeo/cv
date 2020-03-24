@@ -6,6 +6,7 @@
     \usepackage[utf8]{inputenc}
     \usepackage{hyperref}
     \usepackage{palatino}
+    \usepackage{tagging}  % swich between cv types
 
     % insert QR code
     %   https://tex.stackexchange.com/questions/66231/how-to-put-a-picture-to-the-top-right-of-a-page
@@ -24,27 +25,21 @@
     \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % CV type: DATACV or GISCV
-    \newif\ifQRCODE
-    \QRCODEtrue
+    % display qr code
+    \usetag{QRCODE}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % CV type: DATACV or GISCV
-    \newif\ifDATACV
-    \newif\ifGISCV
+    \usetag{DATACV}
+    %\usetag{GISCV}
 
-    %\DATACVtrue
-    \GISCVtrue
 
-    \ifDATACV
-        \newcommand{\CVjobTitle}{Data Analyst}
-    \else \ifGISCV
-        \newcommand{\CVjobTitle}{GIS Analyst}
-    \else
-        \GenericError{}{ERROR: no CV type defined}{}{}%
-    \fi \fi
+    \tagged{DATACV}{ 
+        \newcommand{\CVjobTitle}{Data Analyst} }
+    \tagged{GISCV}{
+        \newcommand{\CVjobTitle}{GIS Analyst} }
 
-    \renewcommand{\CVjobTitle}{GIS Technician}
+    %\renewcommand{\CVjobTitle}{GIS Technician}
 
     \hypersetup{
         pdfauthor={Andrew W. Ross},
@@ -118,12 +113,14 @@
     
 
 %==== Profile ====%
-\ifQRCODE
+%\ifQRCODE
+\tagged{QRCODE}{
     \AddToShipoutPicture*
         {\put(496,715)
             {\includegraphics[width=1.7cm,height=1.7cm]
             {linkedin-qr3.png}}}
-\fi
+    }
+%\fi
 
 \vspace*{-19pt}
 \begin{center}
@@ -142,25 +139,26 @@
 
 \textbf{BC Transit} 
     \hfill Victoria, Canada\\
-    \ifDATACV
-        \textit{Data Analyst} 
-    \else \ifGISCV
-        \textit{GIS Analyst} 
-    \fi \fi
+    \tagged{DATACV}{
+        \textit{Data Analyst} }
+    \tagged{GISCV}{
+        \textit{GIS Analyst} }
     \hfill January 2013 - October 2018\\
 \vspace{1mm}
 
-\ifDATACV
+\tagged{DATACV}{
     Identified ongoing planning and administrative requirements, sourced and
     developed relevant data sets and provided statistical and spatial analysis to
     %developed relevant data sets and provided statistical analysis in Python to
     create operational products. Specifically:
-\else \ifGISCV
+    }
+\tagged{GISCV}{
     Produced maps, posters, and conducted spatial data analysis for planners and
     administrators.  Developed spatial data models to support transportation
     planning and decision making. Expert use of  ArcGIS Pro, ArcGIS Desktop, and
     ArcGIS Online.
-\fi \fi
+    }
+
 \vspace{-1mm}
 \begin{itemize} \itemsep 0pt
     \item Received 2015 corporate Recognizing Excellence and Values award for
@@ -179,21 +177,17 @@
 
 \textbf{World Bank} 
     \hfill Washington, D.C.\\
-    \ifDATACV
-        \textit{Data Consultant} 
-    \else \ifGISCV
-        \textit{GIS Consultant} 
-    \fi \fi
+    \tagged{DATACV}{
+        \textit{Data Consultant} }
+    \tagged{GISCV}{
+        \textit{GIS Consultant} }
     \hfill October 2011 - December 2012\\
 \vspace{1mm}
 
-Deployed
-    \ifGISCV
-        spatial
-    \fi
-data sharing platforms to multiple countries to aid with national disaster risk
-mitigation efforts. Identified and cleaned national data sets, and ensured
-standardized metadata records.
+Deployed \tagged{GISCV}{spatial} data sharing platforms to multiple countries to
+aid with national disaster risk mitigation efforts. Identified and cleaned
+national data sets, and ensured standardized metadata records.
+
 \vspace{-1mm}
 \begin{itemize} \itemsep 0pt
     \item Helped government ministries planning for disaster mitigation by:
@@ -208,35 +202,31 @@ standardized metadata records.
 
 \textbf{Development Alternatives Inc.~(DAI)} 
     \hfill Washington, D.C.\\
-    \ifDATACV
-        \textit{Principal Development Specialist} 
-    \else \ifGISCV
-        \textit{Principal GIS Development Specialist} 
-    \fi \fi
+    \tagged{DATACV}{
+        \textit{Principal Development Specialist} }
+    \tagged{GISCV}{
+        \textit{Principal GIS Development Specialist} }
     \hfill December 2006 - July 2010\\
 \vspace{1mm}
 
 Developed and deployed mapping and information-sharing applications as part of
-    \ifDATACV
-        data team.  
-    \else \ifGISCV
-        GIS / mapping team.
-    \fi \fi
+    \tagged{DATACV}{data team.}
+    \tagged{GISCV}{GIS / mapping team.}
 Visited field offices to create, train, and assess data collection and analysis
 field units.
-    \ifGISCV
-        Provided mapping and analysis services to staff and external partners.
-        Collected, converted, and consolidated spatial data sets in a variety of
-        formats into corporate spatial data warehouse. 
-    \fi
+\tagged{GISCV}{
+    Provided mapping and analysis services to staff and external partners.
+    Collected, converted, and consolidated spatial data sets in a variety of
+    formats into corporate spatial data warehouse. 
+    }
+
 \vspace{-1mm}
 \begin{itemize} \itemsep 0pt
     \item Promoted from
-        \ifDATACV
-            Data Engineer to Principal Development Specialist
-        \else \ifGISCV
-            GIS Engineer to Principal GIS Development Specialist
-        \fi \fi
+        \tagged{DATACV}{
+            Data Engineer to Principal Development Specialist}
+        \tagged{GISCV}{
+            GIS Engineer to Principal GIS Development Specialist}
 
     \item Worked on USAID's Pakistan activity tracking system (a
     web-based PHP application) that consolidated project information on
@@ -259,7 +249,7 @@ field units.
 \header{Skills}
 %\begin{tabular}{ l p{5.2in} }
     \begin{tabular}[t]{ l L{5.17in} }
-\ifDATACV
+    \tagged{DATACV}{
         Python: &
             Pandas, Numpy, and Scikit-learn, and dashboards / visualizations with
             Jupyter notebooks \\
@@ -271,7 +261,9 @@ field units.
         ETL: & 
             Developing data pipelines and processes for cleaning, verifying,
             and managing large data sets in Python\\
-\else \ifGISCV
+        }
+
+    \tagged{GISCV}{
         GIS:& 
             ESRI ArcGIS Desktop \& ArcGIS Pro, ArcGIS Online, Safe FME for
             developing spatial data pipelines. \\
@@ -281,7 +273,8 @@ field units.
         Databases:& 
             Oracle spatial and PostgreSQL, with advanced experience of SQL,
             stored procedures, and complex queries \\
-\fi \fi
+        }
+
         Communication: &
             Presented workshops and training seminars summarizing technical
             processes and analysis to technical and non-technical audiences \\
