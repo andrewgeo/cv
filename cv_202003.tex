@@ -25,6 +25,14 @@
     \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % import 
+    %    CVname
+    %    CVaddress
+    %    CVemail
+    %    CVphone
+    \input _private.tex
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % display qr code
     \usetag{QRCODE}
 
@@ -42,8 +50,8 @@
     %\renewcommand{\CVjobTitle}{GIS Technician}
 
     \hypersetup{
-        pdfauthor={Andrew W. Ross},
-        pdftitle={Andrew W. Ross - \CVjobTitle},
+        pdfauthor={\CVname},
+        pdftitle={\CVname~- \CVjobTitle},
         pdfsubject={\CVjobTitle}
     }
 
@@ -119,11 +127,12 @@
 
 \vspace*{-19pt}
 \begin{center}
-	{\Huge \scshape {Andrew W.~Ross}}\\
+	{\Huge \scshape {\CVname}}\\
     %\vspace{1mm}
     {\large \sc {\CVjobTitle}}\\
-    \input _private.tex
-
+    \CVaddress 
+    $\cdot$ \CVemail
+    $\cdot$ \CVphone \\
 \end{center}
 \vspace*{-6pt}
 
