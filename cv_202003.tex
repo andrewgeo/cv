@@ -20,9 +20,10 @@
     % Ragged right in tables
     %   see: https://tex.stackexchange.com/questions/12703/how-to-create-fixed-width-table-columns-with-text-raggedright-centered-raggedlef
     \usepackage{array}
-    \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}{#1}}
-    \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}{#1}}
-    \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}{#1}}
+    \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+    %\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+    \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash}p{#1}}
+    \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % import 
@@ -269,13 +270,14 @@ field units.
 %    legislatures
 
 \end{itemize}
-\vspace{1mm}
+%\vspace{1mm}
 
 
 
 %==== Skills  ====%
 \header{Skills}
 %\begin{tabular}{ l p{5.2in} }
+    \setlength\tabcolsep{1.5pt}
     \begin{tabular}[t]{ l L{5.17in} }
     \tagged{DATACV}{
         Python: &
@@ -326,12 +328,13 @@ field units.
 %Time management
 %Transferable skills
 \end{tabular}
+\vspace{1mm}
 
 
 
 %==== Education ====%
 \header{Education}
-    \textbf{Queen\textquotesingle{}s University}
+    \textbf{Queen's University}
         \hfill Kingston, Canada\\
         MSc.~Computer Science\\
         \vspace{2mm}
@@ -341,7 +344,7 @@ field units.
         Graduate Diploma International Development\\
         \vspace{2mm}
 
-    \textbf{Queen\textquotesingle{}s University}
+    \textbf{Queen's University}
         \hfill Kingston, Canada\\
         BSc.~Psychology \& Computer Science\\
         \vspace{2mm}
