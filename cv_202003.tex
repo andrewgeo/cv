@@ -60,46 +60,37 @@
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
-%\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-%
-%\newcommand{\area} [2] {
-%    \vspace*{-9pt}
-%    \begin{verse}
-%        \textbf{#1}   #2
-%    \end{verse}
-%}
-%
-\newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
-}
-
-\newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
-    \vspace{1mm}
-}
-
-\newcommand{\employer}[4]{
-    \textbf{#1} 
-    \hfill #2\\
-    \textit{#3}
-    \hfill #4\\
-    \vspace{1mm}
+    \newcommand{\lineunder} {
+        \vspace*{-8pt} \\
+        \hspace*{-18pt} \hrulefill \\
     }
 
-\newcommand{\university}[3]{
-    \textbf{#1}
-    \hfill #2\\
-    #3\\
-    \vspace{2mm}
+    \newcommand{\header} [1] {
+        {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+        \vspace*{-6pt} \lineunder
+        \vspace{1mm}
+    }
+
+    \newcommand{\employer}[4]{
+        \textbf{#1} 
+        \hfill #2\\
+        \textit{#3}
+        \hfill #4\\
+        \vspace{1mm}
+    }
+
+    \newcommand{\university}[3]{
+        \textbf{#1}
+        \hfill #2\\
+        #3\\
+        \vspace{2mm}
     }
 
 
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-    \vspace*{-40pt}
+\vspace*{-40pt}
     
 
 %==== Profile ====%
@@ -298,7 +289,7 @@ field units.
 %            ETL: & 
 %                Developing data pipelines and processes for cleaning, verifying,
 %                and managing large data sets in Python\\
-%                }
+             }
 
         \tagged{GISCV}{
             GIS:& 
