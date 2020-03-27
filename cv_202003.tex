@@ -61,15 +61,15 @@
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-
-\newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
-}
-
+%\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+%
+%\newcommand{\area} [2] {
+%    \vspace*{-9pt}
+%    \begin{verse}
+%        \textbf{#1}   #2
+%    \end{verse}
+%}
+%
 \newcommand{\lineunder} {
     \vspace*{-8pt} \\
     \hspace*{-18pt} \hrulefill \\
@@ -78,37 +78,55 @@
 \newcommand{\header} [1] {
     {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt} \lineunder
+    \vspace{1mm}
 }
 
-\newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
+%\newcommand{\employer} [3] {
+%    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+%}
+%
+%\newcommand{\contact} [3] {
+%    \vspace*{-10pt}
+%    \begin{center}
+%        {\Huge \scshape {#1}}\\
+%        #2 \\ #3
+%    \end{center}
+%    \vspace*{-8pt}
+%}
+%
+%\newenvironment{achievements}{
+%    \begin{list}
+%        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+%    \end{list}
+%}
+%
+%\newcommand{\schoolwithcourses} [4] {
+%    \textbf{#1} #2 $\bullet$ #3\\
+%    #4 \\
+%    \vspace*{5pt}
+%}
+%
+%\newcommand{\school} [4] {
+%    \textbf{#1} #2 $\bullet$ #3\\
+%    #4 \\
+%}
 
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
+\newcommand{\company}[4]{
+    \textbf{#1} 
+    \hfill #2\\
+    \textit{#3}
+    \hfill #4\\
+    \vspace{1mm}
+    }
 
-\newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
-}
+\newcommand{\university}[3]{
+    \textbf{#1}
+    \hfill #2\\
+    #3\\
+    \vspace{2mm}
+    }
 
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
-}
 
-\newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-}
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -137,17 +155,21 @@
 
 %==== Experience ====%
 \header{Experience}
-\vspace{1mm}
 
-
-\textbf{Freelance} 
-    \hfill San Diego, CA\\
-    \tagged{DATACV}{
-        \textit{Data Analyst Consultant} }
-    \tagged{GISCV}{
-        \textit{GIS Analyst Consultant} }
-    \hfill January 2019 - Current\\
-\vspace{1mm}
+\tagged{DATACV}{ 
+    \company
+        {Freelance}
+        {San Diego, CA}
+        {Data Analyst Consultant}
+        {January 2019 - Current}
+    }
+\tagged{GISCV}{ 
+    \company
+        {Freelance}
+        {San Diego, CA}
+        {GIS Analyst Consultant}
+        {January 2019 - Current}
+    }
 
 \tagged{DATACV}{
     Creating, managing and analyzing targeted surveys.  Working closely with
@@ -166,14 +188,20 @@
 \vspace{3mm}
 
 
-\textbf{BC Transit} 
-    \hfill Victoria, Canada\\
-    \tagged{DATACV}{
-        \textit{Data Analyst} }
-    \tagged{GISCV}{
-        \textit{GIS Analyst} }
-    \hfill January 2013 - October 2018\\
-\vspace{1mm}
+\tagged{DATACV}{ 
+    \company
+        {BC Transit} 
+        {Victoria, Canada}
+        {Data Analyst}
+        {January 2013 - October 2018}
+    }
+\tagged{GISCV}{ 
+    \company
+        {BC Transit} 
+        {Victoria, Canada}
+        {GIS Analyst}
+        {January 2013 - October 2018}
+    }
 
 \tagged{DATACV}{
     Identified ongoing planning and administrative requirements, sourced and
@@ -204,14 +232,20 @@
 \end{itemize}
 
 
-\textbf{World Bank} 
-    \hfill Washington, D.C.\\
-    \tagged{DATACV}{
-        \textit{Data Consultant} }
-    \tagged{GISCV}{
-        \textit{GIS Consultant} }
-    \hfill October 2011 - December 2012\\
-\vspace{1mm}
+\tagged{DATACV}{ 
+    \company
+        {World Bank} 
+        {Washington, D.C.}
+        {Data Consultant}
+        {October 2011 - December 2012}
+    }
+\tagged{GISCV}{ 
+    \company
+        {World Bank} 
+        {Washington, D.C.}
+        {GIS Consultant}
+        {October 2011 - December 2012}
+    }
 
 Deployed \tagged{GISCV}{spatial} data sharing platforms to multiple countries to
 aid with national disaster risk mitigation efforts. Identified and cleaned
@@ -229,14 +263,20 @@ national data sets, and ensured standardized metadata records.
 \end{itemize}
 
 
-\textbf{Development Alternatives Inc.~(DAI)} 
-    \hfill Washington, D.C.\\
-    \tagged{DATACV}{
-        \textit{Principal Development Specialist} }
-    \tagged{GISCV}{
-        \textit{Principal GIS Development Specialist} }
-    \hfill December 2006 - July 2010\\
-\vspace{1mm}
+\tagged{DATACV}{ 
+    \company
+        {Development Alternatives Inc.~(DAI)} 
+        {Washington, D.C.}
+        {Principal Development Specialist}
+        {December 2006 - July 2010}
+    }
+\tagged{GISCV}{ 
+    \company
+        {Development Alternatives Inc.~(DAI)} 
+        {Washington, D.C.}
+        {Principal GIS Development Specialist}
+        {December 2006 - July 2010}
+    }
 
 Developed and deployed mapping and information-sharing applications as part of
     \tagged{DATACV}{data team.}
@@ -334,20 +374,20 @@ field units.
 
 %==== Education ====%
 \header{Education}
-    \textbf{Queen's University}
-        \hfill Kingston, Canada\\
-        MSc.~Computer Science\\
-        \vspace{2mm}
+    \university
+        {Queen's University}
+        {Kingston, Canada}
+        {MSc.~Computer Science}
 
-    \textbf{University of Ottawa}
-        \hfill Ottawa, Canada\\
-        Graduate Diploma International Development\\
-        \vspace{2mm}
+    \university
+        {University of Ottawa}
+        {Ottawa, Canada}
+        {Graduate Diploma International Development}
 
-    \textbf{Queen's University}
-        \hfill Kingston, Canada\\
-        BSc.~Psychology \& Computer Science\\
-        \vspace{2mm}
+    \university
+        {Queen's University}
+        {Kingston, Canada}
+        {BSc.~Psychology \& Computer Science}
 
 \end{document}
 
