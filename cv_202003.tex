@@ -1,12 +1,12 @@
 \documentclass[letterpaper]{article}
-    \usepackage[margin=3in]{geometry}
+    \usepackage{geometry}
     \usepackage{fullpage}
-    \usepackage{textcomp}
     \usepackage[T1]{fontenc}
     \usepackage[utf8]{inputenc}
-    \usepackage{hyperref}
+    \usepackage{hyperref} % pdf metadata
     \usepackage{palatino}
     \usepackage{tagging}  % swich between cv types
+    \usepackage{array}    % used by tables
 
     % insert QR code
     %   https://tex.stackexchange.com/questions/66231/how-to-put-a-picture-to-the-top-right-of-a-page
@@ -19,7 +19,6 @@
 
     % Ragged right in tables
     %   see: https://tex.stackexchange.com/questions/12703/how-to-create-fixed-width-table-columns-with-text-raggedright-centered-raggedlef
-    \usepackage{array}
     \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
     \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash}p{#1}}
     \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
