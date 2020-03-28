@@ -24,31 +24,35 @@
     \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash}p{#1}}
     \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % import 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VARIABLES
+
+    % QR CODE 
+    \usetag{QRCODE}
+
+
+    % CV TYPE
+    \usetag{DATACV}
+    %\usetag{GISCV}
+    
+
+    % PERSONAL DETAILS 
     %    CVname
     %    CVaddress
     %    CVemail
     %    CVphone
     \input _private.tex
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % display qr code
-    \usetag{QRCODE}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % CV type: DATACV or GISCV
-    \usetag{DATACV}
-    %\usetag{GISCV}
-
-
+    
     \tagged{DATACV}{ 
         \newcommand{\CVjobTitle}{Data Analyst} }
     \tagged{GISCV}{
         \newcommand{\CVjobTitle}{GIS Analyst} }
-
     %\renewcommand{\CVjobTitle}{ArcGIS Pro Analyst}
 
+
+    % PDF METADATA
     \hypersetup{
         pdfauthor={\CVname},
         pdftitle={\CVname~- \CVjobTitle},
@@ -134,6 +138,7 @@
 \tagged{DATACV}{
     Creating, managing and analyzing targeted surveys.  
     Working closely with clients to develop their information needs.
+    Analyzing survey data for trends, correlations, and significance.
     Analyzing results of survey data along with the success of survey campaign.
     Using Python for data munging, process management, and statistical analysis.
     Tableau dashboards built for clients to explore and visualize their survey results.
