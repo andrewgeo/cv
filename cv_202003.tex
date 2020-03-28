@@ -13,7 +13,7 @@
     \usepackage{graphicx} 
     \usepackage{eso-pic} 
 
-    \textheight=10in
+    %\textheight=10in
     \pagestyle{empty}
     \raggedright
 
@@ -101,21 +101,22 @@
 %==== Profile ====%
 \tagged{QRCODE}{
     \AddToShipoutPicture*
-        {\put(496,711)
+        {\put(496,693)
             {\includegraphics[width=1.7cm,height=1.7cm]
             {linkedin-qr3.png}}}
     }
 
-\vspace*{-15pt}
+\vspace*{-5pt}
 \begin{center}
 	{\Huge \scshape {\CVname}}\\
+    \vspace{4pt}
     {\large \sc {\CVjobTitle}}\\
+    \vspace{4pt}
     \CVaddress 
     $\cdot$ \CVemail
     $\cdot$ \CVphone \\
 \end{center}
 \vspace*{-6pt}
-
 
 
 %==== Experience ====%
@@ -139,8 +140,8 @@
 
 \tagged{DATACV}{
     Creating, managing and analyzing targeted surveys.  
-    Working closely with clients to focus questions and analysis on their
-    information requirements.
+    Working closely with clients to ensure data results and collection process are aligned
+    to their needs and information requirements.
     Analyzing survey data for trends, correlations, and significance.
     %Analyzing results of survey data along with the success of survey campaign.
     Using Python for data munging, process management, and statistical analysis.
@@ -184,7 +185,7 @@
     Managed updates and integration of new data into corporate spatial data warehouse.
     }
 
-\vspace{-3mm}
+\vspace{-3pt}
 \begin{itemize} \itemsep 0pt
     \item Received 2015 corporate Recognizing Excellence and Values award 
         %for helping to create cross-departmental team that analyzed and established
@@ -222,7 +223,7 @@ Deployed \tagged{GISCV}{spatial} data sharing platforms to multiple countries to
 aid with national disaster risk mitigation efforts. Identified and cleaned
 national data sets, and ensured standardized metadata records.
 
-\vspace{-3mm}
+\vspace{-3pt}
 \begin{itemize} \itemsep 0pt
     \item Helped government ministries planning for disaster mitigation by:
     defining data needs with project stakeholders, consolidating demographic,
@@ -234,6 +235,7 @@ national data sets, and ensured standardized metadata records.
 \end{itemize}
 
 
+\iffalse
 %%%%% Development Alternatives
 \tagged{DATACV}{ 
     \employer
@@ -261,7 +263,7 @@ field units.
     formats into corporate spatial data warehouse. 
     }
 
-\vspace{-3mm}
+\vspace{-3pt}
 \begin{itemize} \itemsep 0pt
     \item Promoted from
         \tagged{DATACV}{
@@ -282,6 +284,7 @@ field units.
 %    legislatures
 
 \end{itemize}
+\fi
 
 
 
@@ -295,18 +298,20 @@ field units.
                 Pandas, Numpy, and Scikit-learn, and dashboards / visualizations with
                 Jupyter notebooks \\
             Data analysis: &                 
-                Presenting data and creating exploratory dashboards with Tableau \\
+                Exploring and statistically analyzing and interpreting data with
+                Excel and R,  
+                creating data presentation dashboards with Tableau \\
             Databases: & 
                 Oracle and PostgreSQL RDBMSs with advanced use of SQL, stored
                 procedures, and complex queries \\
+            ETL: & 
+                Developing data pipelines and processes for cleaning, verifying,
+                and managing data sets in Python and R \\
             Communication: &
                 Presented workshops and training seminars summarizing technical
                 processes and analysis to technical and non-technical audiences \\
-%            ETL: & 
-%                Developing data pipelines and processes for cleaning, verifying,
-%                and managing large data sets in Python\\
             Customer service: &
-                Engaged with clients, and partners to identify data needs, plan data
+                Engaged with clients and partners to identify data needs, plan data
                 collection projects, and provided ongoing technical support \\
 %            Collaboration: &
 %                Engaged with planners, clients, and partners to identify data
