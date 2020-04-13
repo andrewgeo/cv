@@ -25,17 +25,79 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MACROS
+
+    \newcommand{\lineunder} {
+        \vspace*{-8pt} \\
+        \hspace*{-18pt} \hrulefill \\
+    }
+
+    \newcommand{\header} [1] {
+        \vspace{3pt}
+        {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+        \vspace*{-6pt} \lineunder
+        \vspace{3pt}
+    }
+
+    \newcommand{\cvprofile}[5]{
+        \begin{center}
+            {\Huge \scshape {#1}}\\
+            %\vspace{4pt}
+            {\large \sc {#2}}\\
+            %\vspace{4pt}
+            #3
+            $\cdot$ #4
+            $\cdot$ #5
+        \end{center}
+    }
+
+    \newcommand{\employer}[4]{
+        \textbf{#1}  % company name
+        \hfill #2\\  % city
+        \textit{#3}  % title
+        \hfill #4\\  % dates
+        \vspace{1mm}
+    }
+
+    \newcommand{\jobintro}[1]{
+        #1
+        \vspace{7pt}
+    }
+
+    \newenvironment{jobtasklist}
+        {
+            \vspace{-12pt}
+            \begin{itemize} \itemsep 0pt
+        }{
+            \end{itemize}
+            \vspace{-3pt}
+        }
+
+    \newcommand{\university}[3]{
+        \textbf{#1}  % name
+        \hfill #2\\  % city
+        #3\\         % degree
+        \vspace{2mm}
+    }
+
+    \newenvironment{skillslist}
+        {
+            \begin{tabular}[t]{ l L{5.17in} }
+        }{
+            \end{tabular}
+        }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % VARIABLES
 
     % QR CODE 
     \usetag{QRCODE}
 
-
     % CV TYPE
     \usetag{DATACV}
     %\usetag{GISCV}
-    
 
     % PERSONAL DETAILS 
     %    CVname
@@ -44,13 +106,8 @@
     %    CVphone
     \input _private.tex
 
-    
-    \tagged{DATACV}{ 
-        \newcommand{\CVjobTitle}{Data Analyst} }
-    \tagged{GISCV}{
-        \newcommand{\CVjobTitle}{GIS Analyst} }
-    %\renewcommand{\CVjobTitle}{Data Engineer}
-
+    \newcommand{\CVjobTitle}{Data Analyst}
+    \newcommand{\CVcompany}{Becton, Dickinson and Company}
 
     % PDF METADATA
     \hypersetup{
@@ -62,69 +119,39 @@
 \hyphenation{
     }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% MACROS
-
-    \newcommand{\lineunder} {
-        \vspace*{-8pt} \\
-        \hspace*{-18pt} \hrulefill \\
-    }
-
-    \newcommand{\header} [1] {
-        {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-        \vspace*{-6pt} \lineunder
-        \vspace{1mm}
-    }
-
-    \newcommand{\employer}[4]{
-        \textbf{#1}  % company name
-        \hfill #2\\  % city
-        \textit{#3}  % title
-        \hfill #4\\  % dates
-        \vspace{1mm}
-    }
-
-    \newcommand{\university}[3]{
-        \textbf{#1}  % name
-        \hfill #2\\  % city
-        #3\\         % degree
-        \vspace{2mm}
-    }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DOCUMENT
 
 \begin{document}
 \vspace*{-20pt}
     
 
-%==== Profile ====%
+%================== Profile ==================%
 \tagged{QRCODE}{
     \AddToShipoutPicture*
-        {\put(496,668)
+        {\put(496,710)
             {\includegraphics[width=1.7cm,height=1.7cm]
             {linkedin-qr3.png}}}
     }
 
-%\vspace*{-19pt}
-\begin{center}
-	{\Huge \scshape {\CVname}}\\
-    \vspace{4pt}
-    {\large \sc {\CVjobTitle}}\\
-    \vspace{4pt}
-    \CVaddress 
-    $\cdot$ \CVemail
-    $\cdot$ \CVphone \\
-\end{center}
+\vspace*{-30pt}
 
-%\vspace*{-6pt}
+\cvprofile
+    {\CVname}
+    {\CVjobTitle}
+    {\CVaddress}
+    {\CVemail}
+    {\CVphone}
+
+\vspace*{-6pt}
 
 
-%==== Experience ====%
+%================== Experience ==================%
 \header{Experience}
 
-%%%%% Freelance
+%------------------ Freelance ------------------%
 \tagged{DATACV}{ 
     \employer
         {Freelance}
@@ -141,24 +168,27 @@
     }
 
 \tagged{DATACV}{
-    Creating, managing and analyzing targeted surveys.  
-    Working closely with clients to ensure data results and collection process are aligned
-    to their needs and technical and functional requirements.
-    Analyzing survey data for trends, correlations, and data quality.
-    %Analyzing results of survey data along with the success of survey campaign.
-    Using Python for data munging, process management, and statistical analysis.
-    Tableau dashboards built for clients to explore and visualize their survey results.
+    \jobintro{
+        Creating, managing and analyzing targeted surveys.  
+        Working closely with clients to ensure data results and collection process are aligned
+        to their needs and technical and functional requirements.
+        Analyzing survey data for trends, correlations, and data quality.
+        %Analyzing results of survey data along with the success of survey campaign.
+        Using Python for data munging, process management, and statistical analysis.
+        Tableau dashboards built for clients to explore and visualize their survey results.
+        }
     }
 \tagged{GISCV}{
-    Providing geospatial services, producing digital and physical maps, 
-    collecting field-based data, conducting spatial data modeling and analysis. 
-    %Working closely with clients to develop their requirements and spatial data needs.  
-    Expert use of ArcGIS Pro, ArcGIS Desktop, and ArcGIS Online.
+    \jobintro{
+        Providing geospatial services, producing digital and physical maps, 
+        collecting field-based data, conducting spatial data modeling and analysis. 
+        %Working closely with clients to develop their requirements and spatial data needs.  
+        Expert use of ArcGIS Pro, ArcGIS Desktop, and ArcGIS Online.
+        }
     }
-\vspace{11pt}
 
 
-%%%%% BC Transit
+%------------------ BC Transit ------------------%
 \tagged{DATACV}{ 
     \employer
         {BC Transit} 
@@ -174,23 +204,24 @@
         {January 2013 - October 2018}
     }
 
-\tagged{DATACV}{
-    Identified ongoing planning and administrative requirements, sourced and
-    developed relevant data sets and provided statistical and spatial analysis to
-    %developed relevant data sets and provided statistical analysis in Python to
-    support business processes. 
-    Developed ETL pipelines in Python and SQL to manage and report on data
-    quality in corporate enterprise data warehouse.
-    }
-\tagged{GISCV}{
-    Produced maps, posters, and conducted spatial data analysis for planners and
-    administrators.  
-    Developed spatial data models to support transportation planning and decision making. 
-    Managed updates and integration of new data into corporate spatial data warehouse.
+\jobintro{
+    \tagged{DATACV}{
+            Identified ongoing planning and administrative requirements, sourced and
+            developed relevant data sets and provided statistical and spatial analysis to
+            %developed relevant data sets and provided statistical analysis in Python to
+            support business processes. 
+            Developed ETL pipelines in Python and SQL to manage and report on data
+            quality in corporate enterprise data warehouse.
+            }
+    \tagged{GISCV}{
+            Produced maps, posters, and conducted spatial data analysis for planners and
+            administrators.  
+            Developed spatial data models to support transportation planning and decision making. 
+            Managed updates and integration of new data into corporate spatial data warehouse.
+            }
     }
 
-\vspace{-9pt}
-\begin{itemize} \itemsep 0pt
+\begin{jobtasklist}
     \item Received 2015 corporate Recognizing Excellence and Values award 
         %for helping to create cross-departmental team that analyzed and established
         %quality measures for data collection that significantly improved data
@@ -204,11 +235,10 @@
 %        \item Developed performance metrics system in Python to monitor security and
 %        quality of regional reporting systems
 %    }
-\end{itemize}
+\end{jobtasklist}
 
 
-%\vspace{-5pt}
-%%%%% World Bank
+%------------------ World Bank ------------------%
 \tagged{DATACV}{ 
     \employer
         {World Bank} 
@@ -228,8 +258,7 @@ Deployed\tagged{GISCV}{spatial} data sharing platforms to multiple countries to
 aid with national disaster risk mitigation efforts. Identified and cleaned
 national data sets, and ensured standardized metadata records.
 
-\vspace{-9pt}
-\begin{itemize} \itemsep 0pt
+\begin{jobtasklist}
     \item Helped government ministries planning for disaster mitigation by:
     defining data needs with project stakeholders, consolidating demographic,
     socioeconomic, and geographic data sets, and building 
@@ -237,70 +266,70 @@ national data sets, and ensured standardized metadata records.
     
 %    \item Developed data cleaning and database uploading tools in Python to 
 %    standardize data cleaning and data management processes
-\end{itemize}
+\end{jobtasklist}
 
 
-%\vspace{-5pt}
-%%%%%% Development Alternatives
-%\tagged{DATACV}{ 
-%    \employer
-%        {Development Alternatives Inc.~(DAI)} 
-%        {Washington, D.C.}
-%        {Principal Development Specialist}
-%        {December 2006 - July 2010}
-%    }
-%\tagged{GISCV}{ 
-%    \employer
-%        {Development Alternatives Inc.~(DAI)} 
-%        {Washington, D.C.}
-%        {Principal GIS Development Specialist}
-%        {December 2006 - July 2010}
-%    }
-%
-%Developed and deployed mapping and information-sharing applications as part of
-%    \tagged{DATACV}{data team.}
-%    \tagged{GISCV}{GIS / mapping team.}
-%Visited field offices to create, train, and assess data collection and analysis
-%field units. 
-%Supported RFP process with prototypes and written submissions.
-%\tagged{GISCV}{
-%    %Provided mapping and analysis services to staff and external partners.
-%    Collected, converted, and consolidated spatial data sets in a variety of
-%    formats into corporate spatial data warehouse. 
-%    }
-%
-%\vspace{-9pt}
-%\begin{itemize} \itemsep 0pt
-%    \item Promoted from
-%        \tagged{DATACV}{
-%            Data Engineer to Principal Development Specialist}
-%        \tagged{GISCV}{
-%            GIS Engineer to Principal GIS Development Specialist}
-%
-%%    \item Worked on USAID's Pakistan activity tracking system (a
-%%    web-based PHP application) that consolidated project information on
-%%    thousands of partner and contractor activities in the region
-%
-%    \item Designed and built 
-%        %Python and GoogleEarth 
-%        mapping system which
-%    effectively visualized USAID's partnerships with corporations world wide for
-%    the Global Development Alliance (GDA) project
-%
-%%    \item Developed prototype national mapping and statistical research tool to
-%%    collect and map statistics for Pakistan's national and regional
-%%    legislatures
-%
-%\end{itemize}
+%------------------ Development Alternatives ------------------%
+\tagged{DATACV}{ 
+    \employer
+        {Development Alternatives Inc.~(DAI)} 
+        {Washington, D.C.}
+        {Principal Development Specialist}
+        {December 2006 - July 2010}
+    }
+\tagged{GISCV}{ 
+    \employer
+        {Development Alternatives Inc.~(DAI)} 
+        {Washington, D.C.}
+        {Principal GIS Development Specialist}
+        {December 2006 - July 2010}
+    }
+
+\jobintro{
+    Developed and deployed mapping and information-sharing applications as part of
+        \tagged{DATACV}{data team.}
+        \tagged{GISCV}{GIS / mapping team.}
+    Visited field offices to create, train, and assess data collection and analysis
+    field units. 
+    Supported RFP process with prototypes and written submissions.
+    \tagged{GISCV}{
+        %Provided mapping and analysis services to staff and external partners.
+        Collected, converted, and consolidated spatial data sets in a variety of
+        formats into corporate spatial data warehouse. 
+        }
+    }
+
+\begin{jobtasklist}
+    \item Promoted from
+        \tagged{DATACV}{
+            Data Engineer to Principal Development Specialist}
+        \tagged{GISCV}{
+            GIS Engineer to Principal GIS Development Specialist}
+
+%    \item Worked on USAID's Pakistan activity tracking system (a
+%    web-based PHP application) that consolidated project information on
+%    thousands of partner and contractor activities in the region
+
+    \item Designed and built 
+        %Python and GoogleEarth 
+        mapping system which
+    effectively visualized USAID's partnerships with corporations world wide for
+    the Global Development Alliance (GDA) project
+
+%    \item Developed prototype national mapping and statistical research tool to
+%    collect and map statistics for Pakistan's national and regional
+%    legislatures
+
+\end{jobtasklist}
 
 
 
-%==== Skills  ====%
+%================== Skills ==================%
 \header{Skills}
     \tagged{GISCV}{
         \vspace{-9pt} }
     \begin{taggedblock}{DATACV}
-        \begin{tabular}[t]{ l L{5.17in} }
+        \begin{skillslist}
 %            Python: &
 %                Pandas, Numpy, and Scikit-learn, Jupyter notebooks, and
 %                developing ETL pipelines 
@@ -331,10 +360,10 @@ national data sets, and ensured standardized metadata records.
 %                Engaged with planners, clients, and partners to identify data
 %                needs, plan data collection projects, refine analysis and models
 %                \\
-        \end{tabular}
+        \end{skillslist}
     \end{taggedblock}
     \begin{taggedblock}{GISCV}
-        \begin{tabular}[t]{ l L{5.17in} }
+        \begin{skillslist}
             GIS:& 
                 ESRI ArcGIS Desktop \& ArcGIS Pro, ArcGIS Online, spatial data
                 pipelines with Safe FME, 
@@ -364,14 +393,12 @@ national data sets, and ensured standardized metadata records.
 %                Engaged with planners, clients, and partners to identify data
 %                needs, plan data collection projects, refine analysis and models
 %                \\
-        \end{tabular}
+        \end{skillslist}
     \end{taggedblock}
 
-\vspace{6pt}
 
 
-
-%==== Education ====%
+%================== Education ==================%
 \header{Education}
     \university
         {Queen's University}

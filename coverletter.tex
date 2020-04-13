@@ -13,6 +13,22 @@
     \usepackage{graphicx} 
     \usepackage{eso-pic} 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MACROS
+    \newcommand{\impt}[1]{\uline{#1}}
+
+    % PAGE FORMATTING
+    \pagestyle{empty}
+    \raggedright
+    \setlength{\parskip}{1em}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VARIABLES
+    
     % PERSONAL DETAILS 
     %    CVname
     %    CVaddresswrap
@@ -22,10 +38,6 @@
 
     \newcommand{\CVjobTitle}{Data Analyst}
     \newcommand{\CVcompany}{Becton, Dickinson and Company}
-
-
-    % MACROS
-    \newcommand{\impt}[1]{\uline{#1}}
 
     % PDF METADATA
     \hypersetup{
@@ -37,10 +49,10 @@
     \hyphenation{
         }
 
-    % PAGE FORMATTING
-    \pagestyle{empty}
-    \raggedright
-    \setlength{\parskip}{1em}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT
 
 \begin{document}
 
@@ -124,11 +136,11 @@ I look forward to hearing from you.
 Sincerely,\\
     \hspace{1em} 
     \includegraphics[height=1.2cm]{_ar_sig.png} \\
-\CVname \\
-\small
-\CVaddresswrap \\
-Tel: \CVphone \\
-Email: \CVemail
+    \CVname \\
+    \small
+    \CVaddresswrap \\
+    Tel: \CVphone \\
+    Email: \CVemail
 
 \end{document}
 
