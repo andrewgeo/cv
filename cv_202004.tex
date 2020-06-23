@@ -34,7 +34,7 @@
     }
 
     \newcommand{\header} [1] {
-        \vspace{3pt}
+        \vspace{10pt}
         {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
         \vspace*{-6pt} \lineunder
         \vspace{3pt}
@@ -53,6 +53,7 @@
     }
 
     \newcommand{\employer}[4]{
+        \vspace{5pt}
         \textbf{#1}  % company name
         \hfill #2\\  % city
         \textit{#3}  % title
@@ -96,8 +97,8 @@
     \usetag{QRCODE}
 
     % CV TYPE
-    %\usetag{DATACV}
-    \usetag{GISCV}
+    \usetag{DATACV}
+    %\usetag{GISCV}
 
     % PERSONAL DETAILS 
     %    CVname
@@ -106,8 +107,8 @@
     %    CVphone
     \input _private.tex
 
-    \newcommand{\CVjobTitle}{Data Analyst Consultant}
-    \newcommand{\CVcompany}{Opinion Dynamics}
+    \newcommand{\CVjobTitle}{BI developer}
+    \newcommand{\CVcompany}{Ad Results Media}
 
     % PDF METADATA
     \hypersetup{
@@ -131,7 +132,7 @@
 %================== Profile ==================%
 \tagged{QRCODE}{
     \AddToShipoutPicture*
-        {\put(496,707)
+        {\put(496,687)
             {\includegraphics[width=1.7cm,height=1.7cm]
             {linkedin-qr3.png}}}
     }
@@ -170,8 +171,8 @@
 \tagged{DATACV}{
     \jobintro{
         Creating, managing and analyzing targeted surveys.  
-        Working closely with clients to ensure data results and collection process are aligned
-        to their needs and technical and functional requirements.
+        %Working closely with clients to ensure data results and collection process are aligned
+        %to their needs and technical and functional requirements.
         Analyzing survey data for trends, correlations, and data quality.
         %Analyzing results of survey data along with the success of survey campaign.
         Using Python for data munging, process management, and statistical analysis.
