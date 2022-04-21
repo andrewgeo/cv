@@ -43,12 +43,10 @@
     \newcommand{\cvprofile}[5]{
         \begin{center}
             {\Huge \scshape {#1}}\\
-            %\vspace{4pt}
+            \vspace{4pt}
             {\large \sc {#2}}\\
-            %\vspace{4pt}
-            #3
-            $\cdot$ #4
-            $\cdot$ #5
+            \vspace{4pt}
+            #3 $\cdot$\enspace #4 $\cdot$\enspace #5
         \end{center}
     }
 
@@ -107,7 +105,7 @@
     %    CVphone
     \input _private.tex
 
-    \newcommand{\CVjobTitle}{GIS Analyst}
+    \newcommand{\CVjobTitle}{Geographic Information Systems Analyst}
     \newcommand{\CVcompany}{SANDAG}
 
     % PDF METADATA
@@ -182,24 +180,28 @@
     }
 \tagged{GISCV}{
     \jobintro{
-        Supported corporate web-based mapping application.  Collected, cleaned,
-        verified, and consolidated geospatial data from dispirate sources.
-        Managed spatial database.  Provided complex spatial analyses and
-        visualizations for planners and administrators throughout company.
-        Extensive use of python for geoprocessing, including geopandas, ArcPy, and Jupyter.
+        Collecting,
+        cleaning, verifying, and consolidating geospatial data from disparate
+        sources, and managing spatial data warehouse, to support corporate
+        mapping system.  Provide complex spatial analyses and visualizations
+        for planners and field staff throughout company.  Extensive use of
+        python for geoprocessing, with geopandas, ArcPy, and other geospatial
+        libraries.
         }
     }
 
 \begin{jobtasklist}
-    \item Deployed automated spatial data workflow to consolidate dispirate
-    geospatial data from partner organiations, incluinding cleaning, verification and upload into
-    corpate mapping application.  Workflow processes over 6.5 million features per day.
+    \item Deployed automated spatial data workflow in Python to consolidate
+        disparate geospatial data from partner organizations, including
+        cleaning, verification and upload into corporate mapping application.
+        Workflow processes over 6.5 million features per day
 
-    \item Developed standardized tools for processing and managing spatial for incorporation into 
-    corporate spatial data platform.
-
-    \item Deployed automated system to continuously monitor configuration of
-    over 3000 layers in multiple mapping applications.
+%    \item Developed standardized tool set for cleaning, transforming, and
+%        uploading spatial data into corporate spatial data platform
+%
+    \item Deployed automated Python system to continuously monitor
+        configuration of over 3000 layers in multiple mapping applications with
+        over 30 tests
     
 \end{jobtasklist}
 
@@ -234,7 +236,7 @@
 \tagged{GISCV}{
     \jobintro{
         Provided geospatial services and produced digital and physical maps, 
-        collectded field-based data, conductded spatial data modeling and analysis. 
+        collected field-based data, conducted spatial data modeling and analysis. 
         %Working closely with clients to develop their requirements and spatial data needs.  
         Expert use of ArcGIS Pro, ArcGIS Desktop, and ArcGIS Online.
         }
@@ -281,7 +283,7 @@
         %quality measures for data collection that significantly improved data
         %quality.
 
-    \item Implemented reporting system dashboard to analyze
+    \item Implemented Python reporting system dashboard to analyze
     regional transport ridership, processing 150,000+ transactions per day from
     a 700+ vehicle fleet
     
@@ -393,8 +395,8 @@
                 Tableau
                 \\
             Databases: & 
-                Oracle and PostgreSQL RDBMSs with advanced use of SQL, stored
-                procedures, complex queries, and database management
+                Oracle and PostgreSQL Spatial RDBMSs. Advanced use of SQL, stored
+                procedures, complex queries, and database management.
                 \\
 %            ETL: & 
 %                Developing data pipelines and processes for cleaning, verifying,
@@ -418,16 +420,16 @@
     \begin{taggedblock}{GISCV}
         \begin{skillslist}
             GIS:& 
-                ESRI ArcGIS Desktop \& ArcGIS Pro, Spatial Analyst, 3D Analyst,
-                spatial data pipelines with Safe FME, Orthorectification, Lidar processing
+                ESRI ArcGIS Pro with Spatial Analyst, Orthorectification, and LiDAR processing.
+                Geoprocessing pipelines with Safe FME.
                 \\
             Python:& 
-                Geoprocessing with ArcPy, geopandas, rasterio
-                Data management, cleaning \& verification, 
+                Geoprocessing with ArcPy, geopandas, rasterio, and numpy.
+                Development of data management, cleaning \& verification workflows. 
                 \\
              Databases:& 
-                 Oracle spatial and PostgreSQL/PostGIS RDBMSs, SQL,
-                 functions, triggers, and stored procedures
+                 Oracle spatial and PostgreSQL/PostGIS RDBMSs. 
+                 Advanced SQL with functions, triggers, and stored procedures.
                  \\
 %            Communication: &
 %                Presented workshops and training seminars summarizing technical
@@ -438,9 +440,11 @@
 %                and managing large data sets in Python
 %                \\
             Customer service: &
-                Engaged with technical and non-technical clients, and partners
-                to identify data needs, plan data collection projects, and
-                provide ongoing technical support
+                Engaged with technical and non-technical clients and users
+                to identify needs and requirements and develop maps, visualizations
+                and geospatial data to meet them. 
+                Experience preparing technical documentation,
+                presentations and training materials.
                 \\
 %            Collaboration: &
 %                Engaged with planners, clients, and partners to identify data
@@ -456,17 +460,17 @@
     \university
         {Queen's University}
         {Kingston, Canada}
-        {MSc.~Computer Science}
+        {Master of Science, ~Computer Science}
 
     \university
         {University of Ottawa}
         {Ottawa, Canada}
-        {Graduate Diploma International Development}
+        {Graduate Diploma, International Development}
 
     \university
         {Queen's University}
         {Kingston, Canada}
-        {BSc.~Psychology \& Computer Science}
+        {Bachelor of Science, ~Psychology \& Computer Science}
 
 \end{document}
 
