@@ -10,8 +10,8 @@
 
     % insert QR code
     %   https://tex.stackexchange.com/questions/66231/how-to-put-a-picture-to-the-top-right-of-a-page
-    \usepackage{graphicx} 
-    \usepackage{eso-pic} 
+    \usepackage{graphicx}
+    \usepackage{eso-pic}
 
     \pagestyle{empty}
     \textheight=10in
@@ -34,24 +34,24 @@
     }
 
     \newcommand{\header} [1] {
-        \vspace{10pt}
+        \vspace{9pt}
         {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
         \vspace*{-6pt} \lineunder
-        \vspace{3pt}
+        \vspace{2pt}
     }
 
-    \newcommand{\cvprofile}[5]{
+    \newcommand{\cvprofile}[4]{
         \begin{center}
             {\Huge \scshape {#1}}\\
             \vspace{4pt}
             {\large \sc {#2}}\\
             \vspace{4pt}
-            #3 $\cdot$\enspace #4 $\cdot$\enspace #5
+            #3 $\cdot$\enspace #4
         \end{center}
     }
 
     \newcommand{\employer}[4]{
-        \vspace{5pt}
+        \vspace{3pt}
         \textbf{#1}  % company name
         \hfill #2\\  % city
         \textit{#3}  % title
@@ -91,18 +91,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % VARIABLES
 
-    % QR CODE 
+    % QR CODE
     \usetag{QRCODE}
 
     % CV TYPE
     %\usetag{DATACV}
     \usetag{GISCV}
 
-    % PERSONAL DETAILS 
+    % PERSONAL DETAILS
     %    CVname
     %    CVaddress
     %    CVemail
-    %    CVphone
     \input _private.tex
 
     \newcommand{\CVjobTitle}{Geographic Information Systems Analyst}
@@ -125,7 +124,7 @@
 
 \begin{document}
 %\vspace*{-20pt}
-    
+
 
 %================== Profile ==================%
 \tagged{QRCODE}{
@@ -142,7 +141,6 @@
     {\CVjobTitle}
     {\CVaddress}
     {\CVemail}
-    {\CVphone}
 
 \vspace*{-6pt}
 
@@ -151,14 +149,14 @@
 \header{Experience}
 
 %------------------ Congruex ------------------%
-\tagged{DATACV}{ 
+\tagged{DATACV}{
     \employer
         {Congruex}
         {San Diego, CA}
         {GIS Engineer}
         {June 2020 - Current}
     }
-\tagged{GISCV}{ 
+\tagged{GISCV}{
     \employer
         {Congruex}
         {San Diego, CA}
@@ -169,7 +167,7 @@
 \tagged{DATACV}{
     \jobintro{
 
-        Creating, managing and analyzing targeted surveys.  
+        Creating, managing and analyzing targeted surveys.
         %Working closely with clients to ensure data results and collection process are aligned
         %to their needs and technical and functional requirements.
         Analyzing survey data for trends, correlations, and data quality.
@@ -180,41 +178,39 @@
     }
 \tagged{GISCV}{
     \jobintro{
-        Collecting,
-        cleaning, verifying, and consolidating geospatial data from disparate
-        sources, and managing spatial data warehouse, to support corporate
-        mapping system.  Provide complex spatial analyses and visualizations
-        for planners and field staff throughout company.  Extensive use of
-        python for geoprocessing, with geopandas, ArcPy, and other geospatial
-        libraries.
+        Managed corporate mapping platform by developing spatial data pipelines and
+        tools to clean and consolidate data from disparate sources. Developed spatial
+        analyses and visualizations using Python for geoprocessing, including
+        geopandas, ArcPy, and ScikitLearn. Specifically: 
         }
     }
 
 \begin{jobtasklist}
-    \item Deployed automated spatial data workflow in Python to consolidate
-        disparate geospatial data from partner organizations, including
-        cleaning, verification and upload into corporate mapping application.
-        Workflow processes over 6.5 million features per day
+    \item Created and maintained a
+        core geospatial Python library supporting APIs and standard tools for efficient
+        management of the mapping applications, comprising over 7000 lines of code.
+    \item Deployed a Python-based ETL workflow to consolidate geospatial data
+        from partner organizations, processing over 6.5 million features per
+        day.
+    \item Implemented API infrastructure and created 17 endpoints in
+        Python to support geospatial analysis, along with a continuous testing
+        suite.
+    \item Developed tools to monitor the health \& performance of mapping
+        applications, checking loading times, availability, and performing
+        continuous configuration testing.
 
-%    \item Developed standardized tool set for cleaning, transforming, and
-%        uploading spatial data into corporate spatial data platform
-%
-    \item Deployed automated Python system to continuously monitor
-        configuration of over 3000 layers in multiple mapping applications with
-        over 30 tests
-    
 \end{jobtasklist}
 
 
 %------------------ Freelance ------------------%
-\tagged{DATACV}{ 
+\tagged{DATACV}{
     \employer
         {Freelance}
         {San Diego, CA}
         {Data Analyst Consultant}
         {January 2019 - May 2020}
     }
-\tagged{GISCV}{ 
+\tagged{GISCV}{
     \employer
         {Freelance}
         {San Diego, CA}
@@ -224,7 +220,7 @@
 
 \tagged{DATACV}{
     \jobintro{
-        Creating, managing and analyzing targeted surveys.  
+        Creating, managing and analyzing targeted surveys.
         %Working closely with clients to ensure data results and collection process are aligned
         %to their needs and technical and functional requirements.
         Analyzing survey data for trends, correlations, and data quality.
@@ -235,25 +231,24 @@
     }
 \tagged{GISCV}{
     \jobintro{
-        Provided geospatial services and produced digital and physical maps, 
-        collected field-based data, conducted spatial data modeling and analysis. 
-        %Working closely with clients to develop their requirements and spatial data needs.  
-        Expert use of ArcGIS Pro, ArcGIS Desktop, and ArcGIS Online.
+        Created, managed, and analyzed targeted surveys, aligning data
+        collection to client needs. Utilized Python for data munging, process
+        management, and statistical analysis.
         }
     }
 
 
 %------------------ BC Transit ------------------%
-\tagged{DATACV}{ 
+\tagged{DATACV}{
     \employer
-        {BC Transit} 
+        {BC Transit}
         {Victoria, Canada}
         {Data Analyst}
         {January 2013 - October 2018}
     }
-\tagged{GISCV}{ 
+\tagged{GISCV}{
     \employer
-        {BC Transit} 
+        {BC Transit}
         {Victoria, Canada}
         {GIS Analyst}
         {January 2013 - October 2018}
@@ -265,28 +260,29 @@
             Identified ongoing planning and administrative requirements, sourced and
             developed relevant data sets and provided statistical and spatial analysis to
             %developed relevant data sets and provided statistical analysis in Python to
-            support business processes. 
+            support business processes.
             Developed ETL pipelines in Python and SQL to manage and report on data
             quality in corporate enterprise data warehouse.
             }
     \tagged{GISCV}{
-            Produced maps, posters, and conducted spatial data analysis for planners and
-            administrators.  
-            Developed spatial data models to support transportation planning and decision making. 
+            Worked with planning and administrative teams to create statistical and spatial analysis. 
             Managed updates and integration of new data into corporate spatial data warehouse.
+            Specifically:
             }
     }
 
 \begin{jobtasklist}
-    \item Received 2015 corporate Recognizing Excellence and Values award 
-        %for helping to create cross-departmental team that analyzed and established
-        %quality measures for data collection that significantly improved data
-        %quality.
+    \item Deployed reporting system - built with Python and Jupyter notebooks -
+        to analyze regional transport ridership, processing 150,000+
+        transactions per day from a 700+ vehicle fleet.
 
-    \item Implemented Python reporting system dashboard to analyze
-    regional transport ridership, processing 150,000+ transactions per day from
-    a 700+ vehicle fleet
-    
+    \item Developed performance metrics system to monitor security and quality
+        of regional reporting systems.
+
+    \item Received the 2015 corporate Recognizing Excellence and Values award
+        for helping to create a cross-departmental team that significantly
+        improved transit vehicle farebox data collection.
+
 %    \tagged{DATACV}{
 %        \item Developed performance metrics system in Python to monitor security and
 %        quality of regional reporting systems
@@ -295,16 +291,16 @@
 
 
 %------------------ World Bank ------------------%
-%\tagged{DATACV}{ 
+%\tagged{DATACV}{
 %    \employer
-%        {World Bank} 
+%        {World Bank}
 %        {Washington, D.C.}
 %        {Consultant}
 %        {June 2012 - December 2012}
 %    }
-%\tagged{GISCV}{ 
+%\tagged{GISCV}{
 %    \employer
-%        {World Bank} 
+%        {World Bank}
 %        {Washington, D.C.}
 %        {GIS Consultant}
 %        {June 2012 - December 2012}
@@ -318,63 +314,63 @@
 %\begin{jobtasklist}
 %    \item Helped government ministries planning for disaster mitigation by:
 %    defining data needs with project stakeholders, consolidating demographic,
-%    socioeconomic, and geographic data sets, and building 
+%    socioeconomic, and geographic data sets, and building
 %    geodatabases
-%    
-%%    \item Developed data cleaning and database uploading tools in Python to 
+%
+%%    \item Developed data cleaning and database uploading tools in Python to
 %%    standardize data cleaning and data management processes
 %\end{jobtasklist}
 
 
 %------------------ Development Alternatives ------------------%
-% \tagged{DATACV}{ 
+% \tagged{DATACV}{
 %     \employer
-%         {Development Alternatives Inc.~(DAI)} 
+%         {Development Alternatives Inc.~(DAI)}
 %         {Washington, D.C.}
 %         {Principal Development Specialist}
 %         {December 2006 - July 2010}
 %     }
-% \tagged{GISCV}{ 
+% \tagged{GISCV}{
 %     \employer
-%         {Development Alternatives Inc.~(DAI)} 
+%         {Development Alternatives Inc.~(DAI)}
 %         {Washington, D.C.}
 %         {Principal GIS Development Specialist}
 %         {December 2006 - July 2010}
 %     }
-% 
+%
 % \jobintro{
 %     Developed and deployed mapping and information-sharing applications as part of
 %         \tagged{DATACV}{data team.}
 %         \tagged{GISCV}{GIS / mapping team.}
 %     Visited field offices to create, train, and assess data collection and analysis
-%     field units. 
+%     field units.
 %     Supported RFP process with prototypes and written submissions.
 %     \tagged{GISCV}{
 %         %Provided mapping and analysis services to staff and external partners.
 %         Collected, converted, and consolidated spatial data sets in a variety of
-%         formats into corporate spatial data warehouse. 
+%         formats into corporate spatial data warehouse.
 %         }
 %     }
-% 
+%
 % \begin{jobtasklist}
 %     \item Promoted from
 %         \tagged{DATACV}{Data Engineer to Principal Development Specialist}
 %         \tagged{GISCV}{GIS Engineer to Principal GIS Development Specialist}
-% 
+%
 % %    \item Worked on USAID's Pakistan activity tracking system (a
 % %    web-based PHP application) that consolidated project information on
 % %    thousands of partner and contractor activities in the region
-% 
-%     \item Designed and built 
-%         %Python and GoogleEarth 
+%
+%     \item Designed and built
+%         %Python and GoogleEarth
 %         mapping system which
 %     effectively visualized USAID's partnerships with corporations world wide for
 %     the Global Development Alliance (GDA) project
-% 
+%
 % %    \item Developed prototype national mapping and statistical research tool to
 % %    collect and map statistics for Pakistan's national and regional
 % %    legislatures
-% 
+%
 % \end{jobtasklist}
 
 
@@ -382,23 +378,23 @@
 %================== Skills ==================%
 \header{Skills}
     \tagged{GISCV}{
-        \vspace{-9pt} }
+        \vspace{-1pt} }
     \begin{taggedblock}{DATACV}
         \begin{skillslist}
 %            Python: &
 %                Pandas, Numpy, and Scikit-learn, Jupyter notebooks, and
-%                developing ETL pipelines 
+%                developing ETL pipelines
 %                \\
             Data analysis: &
-                Statistical analysis, cleaning, and ETL with Python and R, 
+                Statistical analysis, cleaning, and ETL with Python and R,
                 and creating data presentations and exploratory dashboards with
                 Tableau
                 \\
-            Databases: & 
+            Databases: &
                 Oracle and PostgreSQL Spatial RDBMSs. Advanced use of SQL, stored
                 procedures, complex queries, and database management.
                 \\
-%            ETL: & 
+%            ETL: &
 %                Developing data pipelines and processes for cleaning, verifying,
 %                and managing data sets in Python and R
 %                \\
@@ -419,33 +415,26 @@
     \end{taggedblock}
     \begin{taggedblock}{GISCV}
         \begin{skillslist}
-            GIS:& 
+            GIS:&
                 ESRI ArcGIS Pro with Spatial Analyst, Orthorectification, and LiDAR processing.
                 Geoprocessing pipelines with Safe FME.
                 \\
-            Python:& 
+            Python:&
                 Geoprocessing with ArcPy, geopandas, rasterio, and numpy.
-                Development of data management, cleaning \& verification workflows. 
+                Development of data management, cleaning \& verification workflows.
                 \\
-             Databases:& 
-                 Oracle spatial and PostgreSQL/PostGIS RDBMSs. 
+             Databases:&
+                 Oracle spatial and PostgreSQL/PostGIS RDBMSs.
                  Advanced SQL with functions, triggers, and stored procedures.
                  \\
 %            Communication: &
 %                Presented workshops and training seminars summarizing technical
 %                processes and analysis to technical and non-technical audiences
 %                \\
-%            ETL: & 
+%            ETL: &
 %                Developing data pipelines and processes for cleaning, verifying,
 %                and managing large data sets in Python
 %                \\
-            Customer service: &
-                Engaged with technical and non-technical clients and users
-                to identify needs and requirements and develop maps, visualizations
-                and geospatial data to meet them. 
-                Experience preparing technical documentation,
-                presentations and training materials.
-                \\
 %            Collaboration: &
 %                Engaged with planners, clients, and partners to identify data
 %                needs, plan data collection projects, refine analysis and models
@@ -476,101 +465,7 @@
 
 
 \iffalse
-Role
 
-The GIS Analyst is responsible for creating sophisticated mapping and
-visualization tools to help planners, modelers, and decision-makers visualize
-real-world events. The GIS Analyst will prepare maps and analytical reports,
-maintain and enhance an urban land information system, and design, develop,
-test, maintain, and document GIS databases and applications to support
-planning, research, and public safety programs. This position is ideal for a
-GIS professional with a strong interest in furthering their expertise
-performing specialized mapping and analysis in a regional planning environment.
-
- 
-
-Job Responsibilities
-
-• Perform GIS analyses, develop GIS models and databases, design and prepare
-maps, and create other GIS-related products.
-• Design, develop, integrate, and maintain geographic information databases,
-and related tables, forms, and reports used to support regional planning, asset
-management, capital improvement projects, and public safety data and
-application workflows.
-• Support the ongoing development and maintenance of the SPACECORE database and
-application tools; edit and code land inventory data in a production
-environment.
-• Prepare, design, and produce a variety of maps and other graphic
-representations displaying layers and attribute data from databases; develop
-and maintain data layers using GIS tools and relational databases.
-• Perform complex spatial analysis; interpret detailed plans, aerial imagery,
-maps and legal descriptions; code and digitize spatial and non-spatial data
-into various GIS layers; perform quality control checks to ensure integrity.
-• Perform GIS data maintenance, manipulation, analysis, extraction, and
-generation; perform data research, investigation, and verification.
-• Consult with staff to determine product and information needs and develop
-effective, efficient responses to GIS-related requests.
-• Develop and implement automated procedures and programs to make routine
-geoprocessing workflows faster and more efficient; use object-oriented
-programming and relational database technologies to enhance systems and add
-functionality to new or existing applications.
-• Assist with the ongoing development and maintenance of web sites, desktop,
-and mobile applications; review and analyze current applications to identify
-opportunities for enhancement.
-• Develop visualization applications and tools to enhance effective
-decision-making by staff and regional stakeholders.
-• Prepare and maintain technical documentation of databases and geoprocessing
-programs and procedures; prepare and manage metadata; maintain accurate and
-organized records.
-• Coordinate with state and local technical committees and agencies to share
-GIS expertise; jointly develop GIS databases, applications, and resources.
-• Participate in inter-departmental, inter-agency, and binational project teams
-assembled for land use, demographic, and econometric modeling, analyses, and
-planning.
-• Prepare and present written, oral, and visual reports to policy and
-stakeholder committees, upper management, member agencies, and working groups.
-
- 
-
-Experience and Qualifications
-
-• A bachelor’s degree with major course work in geography, planning, computer
-science, information technology, software engineering, or a related field A
-Master’s degree is desirable. A combination of education and recent work
-experience may be considered in lieu of a degree
-• One to three years of recent career experience in a GIS or a
-research-oriented field.
-• Demonstrated knowledge of GIS concepts, principles, practices, and
-techniques, including cartography, design principles, and map creation
-techniques.
-• Experience with ESRI’s ArcGIS for Desktop software; experience using ArcGIS
-for Server, ArcGIS Pro, Spatial Analyst, 3D Analyst, and Network Analyst
-    extensions are desirable.
-• Experience designing geodatabases with ArcGIS architecture; experience
-compiling and integrating data from multiple GIS sources.
-• Demonstrated experience with relational database management systems such as
-Microsoft SQL Server; a working knowledge of query design using the SQL
-programing language and knowledge of Python is desirable.
-• Working knowledge of GIS web services, ArcGIS Online (AGOL), and web mapping
-and application development are desirable.
-• Working knowledge of emerging GIS technologies for data management, analysis,
-and visualization.
-• Strong computer skills and proficiency with the Windows operating system and
-Microsoft Office applications, especially Word, Excel, and PowerPoint.
-• Demonstrated ability to maintain and effectively document GIS databases,
-models, programs, and applications.
-• Ability to work independently and develop GIS procedures that improve
-process, workflow, and analytic capabilities.
-• Knowledge of technologies and methods used to create digital orthorectified
-imagery and terrain data and basic image processing concepts is desirable.
-• Experience working with end-users to determine GIS needs and developing
-applications, maps, and other products that best meet those needs.
-• Excellent organizational skills, attention to detail, and the ability to
-maintain accurate records and work on concurrent projects.
-• Strong interpersonal, written, and oral communication skills, including the
-ability to effectively communicate technical information to non-technical
-audiences.
- 
 \fi
 
 
