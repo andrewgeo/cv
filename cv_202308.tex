@@ -4,16 +4,26 @@
     \usepackage[T1]{fontenc}
     \usepackage[utf8]{inputenc}
     \usepackage{hyperref} % pdf metadata
-    \usepackage{palatino}
     \usepackage{tagging}  % swich between cv types
     \usepackage{array}    % used by tables
+    \usepackage{fontspec}
 
     % insert QR code
     %   https://tex.stackexchange.com/questions/66231/how-to-put-a-picture-to-the-top-right-of-a-page
     \usepackage{graphicx}
     \usepackage{eso-pic}
 
+    \newfontfamily\Lato[
+        Path = fonts/,
+        Extension = .ttf, 
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-BoldItalic,
+    ]{Lato}
+
     \pagestyle{empty}
+    \setmainfont{Lato}
     \textheight=10in
     \raggedright
 
@@ -40,13 +50,13 @@
         \vspace{2pt}
     }
 
-    \newcommand{\cvprofile}[4]{
+    \newcommand{\cvprofile}[5]{ %name,job,address,email,phone
         \begin{center}
-            {\Huge \scshape {#1}}\\
+            {\Huge \textbf {#1}}\\
             \vspace{4pt}
-            {\large \sc {#2}}\\
+            {\large \textbf {#2}}\\
             \vspace{4pt}
-            #3 $\cdot$\enspace #4
+            #3 $\cdot$\enspace #4 $\cdot$\enspace #5
         \end{center}
     }
 
@@ -141,12 +151,13 @@
     {\CVjobTitle}
     {\CVaddress}
     {\CVemail}
+    {\CVphone}
 
 \vspace*{-6pt}
 
 
 %================== Experience ==================%
-\header{Experience}
+\header{EXPERIENCE}
 
 %------------------ Congruex ------------------%
 \tagged{DATACV}{
@@ -376,7 +387,7 @@
 
 
 %================== Skills ==================%
-\header{Skills}
+\header{SKILLS}
     \tagged{GISCV}{
         \vspace{-1pt} }
     \begin{taggedblock}{DATACV}
@@ -445,7 +456,7 @@
 
 
 %================== Education ==================%
-\header{Education}
+\header{EDUCATION}
     \university
         {Queen's University}
         {Kingston, Canada}
