@@ -6,13 +6,24 @@
     \usepackage[utf8]{inputenc}
     \usepackage{hyperref}
     \usepackage{ulem}  % underlining
-    \usepackage{palatino}
+    %\usepackage{palatino}
+    \usepackage{fontspec}
 
     % insert QR code
     %   https://tex.stackexchange.com/questions/66231/how-to-put-a-picture-to-the-top-right-of-a-page
     \usepackage{graphicx} 
     \usepackage{eso-pic} 
 
+    \newfontfamily\Lato[
+        Path = fonts/,
+        Extension = .ttf, 
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-BoldItalic,
+    ]{Lato}
+
+    \setmainfont{Lato}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,7 +48,7 @@
     \input _private.tex
 
     \newcommand{\CVjobTitle}{Geographic Information Systems Analyst}
-    \newcommand{\CVcompany}{SANDAG}
+    \newcommand{\CVcompany}{City of San Diego}
 
     % PDF METADATA
     \hypersetup{
@@ -58,40 +69,37 @@
 
 \large
 
-\null\hfill June 22, 2020
+\null\hfill August 08, 2023
 \vspace{1em}
 
-Dear Human Resources:
+Dear Mr. Scott Daeschner,
 
-My extensive GIS, mapping and spatial data management experience 
-working with a wide variety of 
-technologies makes me a strong candidate for your \impt{\CVjobTitle} position
-at \CVcompany.
+The role of a Geographic Information Systems Analyst creates a bridge between
+complex datasets and actionable insights. With over a decade of hands-on
+experience in developing spatial data pipelines, orchestrating cloud-based
+geospatial APIs, and crafting impactful data-driven narratives, I am
+well-equipped to step into the role and navigate the intricate tapestry of GIS
+challenges. My proficiency in ArcGIS, Python, and a wide range of geospatial
+technologies, aligns seamlessly with my experience addressing the diverse needs
+of end users.
 
-With over \impt{nine years of experience}, I have been working on
-GIS-related projects, consulting with planners and end users,
-discussing their requirements, and developing geospatial data,
-visualizations and analyses that meet their needs and support their
-decisions.  
+From working extensively with ArcGIS Pro, I have mastered the art of
+developing, integrating, and maintaining geospatial data, along with creating
+complex analyses and map visualizations. Additionally, my familiarity with
+various GIS tools, software, and spatial databases enhances my versatility.
+Notably, I possess extensive expertise in constructing data geoprocessing
+workflows using Python.
 
-Technically I have worked \impt{extensively with ArcGIS pro}
-developing, integrating, and maintaining geospatial data, creating
-complex analyses and map visualizations.  
-I have worked with a number
-of spatial databases and utilize SQL for database triggers, functions
-and complex queries.  
-I have in depth experience building data \impt{geoprocessing workflows with Python}.  
+Residing in San Diego and legally authorized to work in the United
+States, I am ready to contribute effectively to your team.
 
-I live in San Diego and can legally work in the United States.  
-
-Thank you for considering my application.
-I look forward to hearing from you.  
-
+Thank you for considering my application. I eagerly await the opportunity to
+discuss this opportunity further with you.
 
 Sincerely,\\
     \hspace{1em} 
     \includegraphics[height=1.2cm]{_ar_sig.png} \\
-    \CVname \\
+    \CVsigname \\
     \small
     %\CVaddresswrap \\
     Tel: \CVphone \\
@@ -101,100 +109,15 @@ Sincerely,\\
 
 
 \iffalse
-Role
+Technically I have worked \impt{extensively with ArcGIS pro}
 
-The GIS Analyst is responsible for creating sophisticated mapping and
-visualization tools to help planners, modelers, and decision-makers visualize
-real-world events. The GIS Analyst will prepare maps and analytical reports,
-maintain and enhance an urban land information system, and design, develop,
-test, maintain, and document GIS databases and applications to support
-planning, research, and public safety programs. This position is ideal for a
-GIS professional with a strong interest in furthering their expertise
-performing specialized mapping and analysis in a regional planning environment.
+Geographic Information Systems Analyst II positions perform a variety of
+technical and analytical duties related to the development, testing,
+implementation, integration and modification of complex geographic information
+systems (GIS) datasets and GIS related applications; provide technical support
+to end users in the day-to-day operation of GIS; and perform other duties as
+assigned.
 
- 
-
-Job Responsibilities
-
-• Perform GIS analyses, develop GIS models and databases, design and prepare
-maps, and create other GIS-related products.
-• Design, develop, integrate, and maintain geographic information databases,
-and related tables, forms, and reports used to support regional planning, asset
-management, capital improvement projects, and public safety data and
-application workflows.
-• Support the ongoing development and maintenance of the SPACECORE database and
-application tools; edit and code land inventory data in a production
-environment.
-• Prepare, design, and produce a variety of maps and other graphic
-representations displaying layers and attribute data from databases; develop
-and maintain data layers using GIS tools and relational databases.
-• Perform complex spatial analysis; interpret detailed plans, aerial imagery,
-maps and legal descriptions; code and digitize spatial and non-spatial data
-into various GIS layers; perform quality control checks to ensure integrity.
-• Perform GIS data maintenance, manipulation, analysis, extraction, and
-generation; perform data research, investigation, and verification.
-• Consult with staff to determine product and information needs and develop
-effective, efficient responses to GIS-related requests.
-• Develop and implement automated procedures and programs to make routine
-geoprocessing workflows faster and more efficient; use object-oriented
-programming and relational database technologies to enhance systems and add
-functionality to new or existing applications.
-• Assist with the ongoing development and maintenance of web sites, desktop,
-and mobile applications; review and analyze current applications to identify
-opportunities for enhancement.
-• Develop visualization applications and tools to enhance effective
-decision-making by staff and regional stakeholders.
-• Prepare and maintain technical documentation of databases and geoprocessing
-programs and procedures; prepare and manage metadata; maintain accurate and
-organized records.
-• Coordinate with state and local technical committees and agencies to share
-GIS expertise; jointly develop GIS databases, applications, and resources.
-• Participate in inter-departmental, inter-agency, and binational project teams
-assembled for land use, demographic, and econometric modeling, analyses, and
-planning.
-• Prepare and present written, oral, and visual reports to policy and
-stakeholder committees, upper management, member agencies, and working groups.
-
- 
-
-Experience and Qualifications
-
-• A bachelor’s degree with major course work in geography, planning, computer
-science, information technology, software engineering, or a related field A
-Master’s degree is desirable. A combination of education and recent work
-experience may be considered in lieu of a degree
-• One to three years of recent career experience in a GIS or a
-research-oriented field.
-• Demonstrated knowledge of GIS concepts, principles, practices, and
-techniques, including cartography, design principles, and map creation
-techniques.
-• Experience with ESRI’s ArcGIS for Desktop software; experience using ArcGIS
-for Server, ArcGIS Pro, Spatial Analyst, 3D Analyst, and Network Analyst
-    extensions are desirable.
-• Experience designing geodatabases with ArcGIS architecture; experience
-compiling and integrating data from multiple GIS sources.
-• Demonstrated experience with relational database management systems such as
-Microsoft SQL Server; a working knowledge of query design using the SQL
-programing language and knowledge of Python is desirable.
-• Working knowledge of GIS web services, ArcGIS Online (AGOL), and web mapping
-and application development are desirable.
-• Working knowledge of emerging GIS technologies for data management, analysis,
-and visualization.
-• Strong computer skills and proficiency with the Windows operating system and
-Microsoft Office applications, especially Word, Excel, and PowerPoint.
-• Demonstrated ability to maintain and effectively document GIS databases,
-models, programs, and applications.
-• Ability to work independently and develop GIS procedures that improve
-process, workflow, and analytic capabilities.
-• Knowledge of technologies and methods used to create digital orthorectified
-imagery and terrain data and basic image processing concepts is desirable.
-• Experience working with end-users to determine GIS needs and developing
-applications, maps, and other products that best meet those needs.
-• Excellent organizational skills, attention to detail, and the ability to
-maintain accurate records and work on concurrent projects.
-• Strong interpersonal, written, and oral communication skills, including the
-ability to effectively communicate technical information to non-technical
-audiences.
  
 \fi
 
