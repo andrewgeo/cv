@@ -50,16 +50,16 @@
         \vspace{2pt}
     }
 
-    \newcommand{\cvprofile}[5]{ %name,job,address,email,phone
+    \newcommand{\cvprofile}[7]{ %name,job,address,email,phone,blog,linkedin
         \begin{center}
             {\Huge \textbf {#1}}\\
             \vspace{4pt}
             {\large \textbf {#2}}\\
             \vspace{4pt}
             #3 $\cdot$\enspace #4 $\cdot$\enspace #5\\
-            Blog: www.44digits.com
+            Blog: #6
             $\cdot$\enspace
-            LinkedIn: www.linkedin.com/in/andrewross44
+            LinkedIn: #7
         \end{center}
     }
 
@@ -115,6 +115,8 @@
     %    CVname
     %    CVaddress
     %    CVemail
+    %    CVblogurl
+    %    CVlinkedin
     \input _private.tex
 
     \newcommand{\CVjobTitle}{Project GIS Analyst}
@@ -155,6 +157,8 @@
     {\CVaddress}
     {\CVemail}
     {\CVphone}
+    {\CVblogurl}
+    {\CVlinkedin}
 
 \vspace*{-6pt}
 
