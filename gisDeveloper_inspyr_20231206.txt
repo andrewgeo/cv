@@ -2,11 +2,16 @@ GIS Software Developer Opportunity - 100% Remote
 Hi Andrew,
 My name is Mike, I'm a Technical Recruiter with INSPYR Solutions.
 
-I wanted to reach out and see if you would be interested in a consulting GIS Software Developer position that I have available with one of my clients, a GIS consulting company for the utilities industry.
+I wanted to reach out and see if you would be interested in a
+consulting GIS Software Developer position that I have available
+with one of my clients, a GIS consulting company for the utilities
+industry.
 
-They are looking for someone with experience with ArcGIS, Python, and AWS for full stack GIS application development.
+They are looking for someone with experience with ArcGIS, Python,
+and AWS for full stack GIS application development.
 
-Does this sound like something you might be open to learning a little more about? Looking forward to hearing from you !
+Does this sound like something you might be open to learning a
+little more about? Looking forward to hearing from you !
 
 Regards,
 Mike
@@ -18,7 +23,8 @@ msanchez@inspyrsolutions.com
 
 
 Hi Andew,
-Thanks for getting back to me! Please see below for the job description:
+Thanks for getting back to me! Please see below for the job
+description:
 
 5-8 years’ experience
 Expert Full Stack GIS Developer: 8+ years’ experience
