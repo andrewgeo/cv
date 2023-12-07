@@ -1,0 +1,44 @@
+GIS Software Developer Opportunity - 100% Remote
+Hi Andrew,
+My name is Mike, I'm a Technical Recruiter with INSPYR Solutions.
+
+I wanted to reach out and see if you would be interested in a consulting GIS Software Developer position that I have available with one of my clients, a GIS consulting company for the utilities industry.
+
+They are looking for someone with experience with ArcGIS, Python, and AWS for full stack GIS application development.
+
+Does this sound like something you might be open to learning a little more about? Looking forward to hearing from you !
+
+Regards,
+Mike
+
+Mike Sanchez
+Lead Delivery Manager-Milwaukee
+414.255.1562
+msanchez@inspyrsolutions.com
+
+
+Hi Andew,
+Thanks for getting back to me! Please see below for the job description:
+
+5-8 years’ experience
+Expert Full Stack GIS Developer: 8+ years’ experience
+Years of development experience pertains to the following technology sets:
+• ESRI ArcGIS, including the following specific components:
+• GIS Server (required)
+• Image Server
+• Portal (required)
+• WebAppBuilder (required)
+• ArcGIS Enterprise and ArcGIS Online Environment
+• ArcObjects development
+• Python Scripting: (required)Python 2.6+Python 3.3+
+• Experience with Python and developing REST APIs with Python
+• Experience developing highly scalable data platform and reliable data pipeline and processing large data feeds using Python
+• .Net core / React / Node JS: (required)
+• Experience in developing Micro services / API using .net core
+• Experience in developing highly scalable web application using Angular/React/NodeJS
+• Web Development: (required) JavaScript, HTML5, CSS3, jQuery, dojo, ASP.net MVC
+• Database: (required) Oracle, Postgres
+• Version Control System: (required), TFS, Git
+• Experience working on Cloud (specifically AWS)
+
+
