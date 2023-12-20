@@ -1,0 +1,26 @@
+Job Title: Data Engineer - 2
+Duties:
+    • Develop ETL processes to move third-party data into data warehouse, including housing and rental supply, census and demographics, legislation that may/does impact us, and social listening. Implement a refresh cadence for each source based on value and how often it's updated.
+    • Design, implement, and maintain data pipelines to connect Airbnb internal and external data. This foundational data set drives ML models that predict where legislative challenges/opportunities are likely to arise and the Airbnb users most likely to engage politically. 
+    • Partner with E&I and DS to build data visualizations that enable service reporting on  legislative and regulatory landscape, incorporating available internal data and new external data sources as ETL processes are implemented.
+    • Support the launch and optimization of Iterable (Email marketing automation platform) that Public Policy is using to engage legislators, journalists, partners, and Hosts by moving audience data into Iterable for automated communications and extracting engagement events and marketing campaign metadata to support data visualization.
+    • Implement the integration of regulatory product and compliance data from data warehouse ->  the Policy Cloud (Salesforce CRM) where the Public Policy team manages legislative and regulatory efforts.
+    • Maintain and expand upon data pipelines that move structured internal Airbnb data into the Policy Cloud including host, listing, regulatory, compliance, and business value.
+
+Skills:
+    • Expertise in data and analytics engineering/data architecture.
+    • Expertise in Python and SQL. Expertise in R is a plus. 
+    • Experience leveraging disparate data sets, in particular   legislative/regulatory/economic/geospatial.
+    • Expertise in transforming data to be leveraged for self-service data visualization resources.
+    • Experience building and implementing ML models is a plus Talent for breaking down complex technical concepts into common language and acting as a bridge between technical and departmental stakeholders.
+    • Experience working with complex and big data systems across a multitude of relationships and metrics. Ability to apply a creative and nuanced perspective to look beyond common data indicators in order to meet business goals.
+    • Ability to self-serve and take the initiative to find answers to technical questions.
+
+Education: Bachelor degree in Computer Science or Computer Engineering
+
+
+Engineering & Infrastructure / Data Science departments
+	support public policy, government legislation
+	data arch, scientists, 3rd party data organizing it
+do i need to source data?
+Airflow - example of open source contributions
