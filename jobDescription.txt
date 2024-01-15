@@ -37,3 +37,16 @@ Demonstrates competency and commitment to equity, diversity, and inclusion.
 Ability to advocate and model the UCSD Principles of Community.
 
 Demonstrated ability to provide training and support to end-users for online applications to promote effective usage.
+
+
+Notes:
+- Proven knowledge of the principles of geographic information science and GIS technology
+- knowledge of related areas of IT
+- porficiency in GIS software - ArcGIS, QGIS
+- relational databases
+- provide basic support to GIS users, end-user support
+- troubleshoot GIS related issues
+- knowledge of business and process analysis funcitons
+- proficient skill identifying, analyzing, organizing, documenting constituent process & data requirements
+
+
