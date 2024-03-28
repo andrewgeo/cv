@@ -119,14 +119,18 @@
     %    CVlinkedin
     \input _private.tex
 
-    \newcommand{\CVjobTitle}{Data Engineer}
-    \newcommand{\CVcompany}{LandGate}
+    % job details
+    %   JobTitle
+    %   JobCompany
+    %   Hiring Manager
+    %   Hiring Manager Title
+    \input _company.tex
 
     % PDF METADATA
     \hypersetup{
         pdfauthor={\CVname},
-        pdftitle={\CVname~- \CVjobTitle},
-        pdfsubject={\CVjobTitle}
+        pdftitle={\CVname~- \JobTitle},
+        pdfsubject={\JobTitle}
     }
 
 \hyphenation{
@@ -153,7 +157,7 @@
 
 \cvprofile
     {\CVname}
-    {\CVjobTitle}
+    {\JobTitle}
     {\CVaddress}
     {\CVemail}
     {\CVphone}
@@ -167,7 +171,7 @@
 %================== Summary ==================%
 \header{SUMMARY}
 %Who , business functions / core competencies / unique value prop
-Highly motivated {\CVjobTitle} with over 9 years of experience in Python, SQL, and data processing.
+Highly motivated {\JobTitle} with over 9 years of experience in Python, SQL, and data processing.
 Demonstrated professional experience building data pipelines and developing REST APIs.
 Proven ability to work independently while collaborating effectively with a team to design,
 develop, and deploy data-driven solutions.

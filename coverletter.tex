@@ -48,14 +48,18 @@
     %    CVphone
     \input _private.tex
 
-    \newcommand{\CVjobTitle}{Data Engineer}
-    \newcommand{\CVcompany}{LandGate}
+    % job details
+    %   JobTitle
+    %   JobCompany
+    %   Hiring Manager
+    %   Hiring Manager Title
+    \input _company.tex
 
     % PDF METADATA
     \hypersetup{
         pdfauthor={\CVname},
-        pdftitle={\CVname~- \CVjobTitle},
-        pdfsubject={\CVjobTitle}
+        pdftitle={\CVname~- \JobTitle},
+        pdfsubject={\JobTitle}
     }
 
     \hyphenation{
@@ -68,16 +72,16 @@
 
 \begin{document}
 \large
-Mr. Yoann Hispa \\
-CEO \& Co-Founder LandGate Corp. \\
-\textbf{\CVcompany} \\
+\JobManager \\
+\JobManagerTitle \\
+\textbf{\JobCompany} \\
 
 \null\hfill February 26, 2024
 
 
 Dear Mr. Hispa,
 
-With over nine years of experience as a Data Engineer, I have a proven track
+With over nine years of experience as a \JobTitle, I have a proven track
 record of building and deploying efficient ETL pipelines, robust APIs, and
 scalable cloud solutions.
 My expertise in Python, SQL, and cloud
