@@ -4,6 +4,6 @@
 #
 # 2020.03.24
 
-rm *.log *.out *.aux *.txt #*.pdf
+rm *.log *.out *.aux #*.txt *.pdf
 
 
