@@ -107,7 +107,7 @@
     % QR CODE
     %\usetag{QRCODE}
 
-    % CV TYPE
+    % CV TYPE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %\usetag{DATACV}
     \usetag{GISCV}
 
@@ -171,15 +171,16 @@
 %================== Summary ==================%
 \header{SUMMARY}
 %Who , business functions / core competencies / unique value prop
-Highly motivated Geospatial Data Engineer with over 9 years of experience in
-designing, developing, and deploying data pipelines and APIs for spatial data
-analysis. 
-Proven ability to leverage Python, SQL/PostGIS, cloud platforms,
-and containerization to transform raw geospatial data
-into actionable insights.
-Experienced in collaborating with cross-functional teams to deliver solutions
-meeting user needs and enhancing spatial data accessibility.
-
+Highly motivated GIS Data Engineer with over 9 years of experience designing,
+developing, and maintaining geospatial data pipelines and integrations. Proven
+ability to leverage FME Desktop and Python (ArcPy, GeoPandas) to
+automate ETL processes, manage large spatial databases (Oracle Spatial,
+PostGIS), and configure Geoserver for web applications.
+Experienced in cloud
+platforms (AWS, Azure) and containerization (Docker) for scalable geospatial
+workflows.
+Passionate about using spatial data analysis to solve real-world
+problems and improve decision-making.
 
 %================== Skills ==================%
 \header{SKILLS}
@@ -222,18 +223,18 @@ meeting user needs and enhancing spatial data accessibility.
     \begin{taggedblock}{GISCV}
         \begin{skillslist}
             GIS applications:&
-                Expert in ESRI ArcGIS Pro \& QGIS \linebreak
-                Systems administration: Oracle Spatial, Postgres/PostGIS, Geoserver \linebreak
-                Advanced skills in large spatial relational database design \linebreak
-                Installation, testing, and operation of GIS applications \linebreak
+                Expert in FME Desktop, ESRI ArcGIS Pro, \& QGIS \linebreak
+                Advanced skills in large spatial relational database design: Oracle Spatial, Postgres/PostGIS \linebreak
+                Geoserver administration, authorization, layer configuration, and styling \linebreak
                 \\
-%            Spatial data analysis:&
-%                Comprehensive experience in data collection, cleaning, consolidation \& coordination \linebreak
-%                Expertise in maintenance \& complex analysis of digital spatial data to support decision-making \linebreak
-%                Proven track record in data conversion from a variety of sources and formats into GIS usable data \linebreak
-%                \\
+            Spatial data analysis:&
+                Extensive experience in creating, verifying \& converting between data types:
+                    GeoJSON, Geodatabase, Geopackage \linebreak
+                Comprehensive experience in data collection, cleaning, consolidation \& coordination \linebreak
+                Data Architecture, data modeling, warehousing \& analytics \linebreak
+                \\
             Python programming:&
-                Geoprocessing with ArcPy, GeoPandas, Rasterio, Shapely, Fiona. \linebreak
+                Geoprocessing with spatial libraries including ArcPy, GeoPandas, Shapely, PyProj \linebreak
                 Development of Spatial ETL pipelines \linebreak
                 Proficient in Jupyter Notebooks \linebreak
                 Test-Driven Development with Pytest \linebreak
@@ -242,14 +243,15 @@ meeting user needs and enhancing spatial data accessibility.
 %            SQL:&
 %                Spatial analysis \& geostatistics \linebreak
 %                \\
-            Cloud computing:&
+%            Cloud computing:&
+            Cloud platforms:&
                 AWS Certified Cloud Practitioner Certification \linebreak
                 Azure Fundamentals Certification \linebreak
                 Docker containerization setup and management. \linebreak
                 Terraform IaC. \linebreak
                 \\
             Technical proficiencies:&
-                SQL - Spatial analysis \& geostatistics \linebreak
+                PostgreSQL - Spatial analysis, geostatistics, triggers, functions \linebreak
                 GIT version control - code management, collaboration \linebreak
                 Linux \& bash \linebreak
                 \\
@@ -294,38 +296,39 @@ meeting user needs and enhancing spatial data accessibility.
 
 \begin{jobtasklist}
     % Accomplished X as measured by Y by doing Z
-    \item Architected and managed containerized cloud API infrastructure 
-            to expand functionality
-            of maps for individual projects and departments, consisting of 19 endpoints
-            written in Python FastAPI on Azure,
-            providing geospatial analysis, reporting, and data management
+    \item Architected and managed containerized cloud API infrastructure using
+        Python FastAPI on Azure to expand functionality of maps for
+        individual projects \& departments, consisting of 19 geospatial analysis,
+        reporting, and data management endpoints
 
-    \item Engineered data analysis in Python with Jupyter, GeoPandas, and scikit-learn
+    \item Engineered data analyses in Python with Jupyter Notebooks, GeoPandas, Shapely
+            and other spatial libraries
             increasing access to corporate spatial data warehouse for project managers
 
 %    \item Trained GIS staff to support management of corporate mapping platform ensuring reliability and stability of
 %            spatial database, map servers, GIT, Linux and concomitant systems
 %
-    \item Provided end-user support and training
-            to technical and non-GIS users of corporate web-mapping platform
+%    \item Provided end-user support and training
+%            to technical and non-GIS users of corporate web-mapping platform
 
-    \item Dramatically improved speed and efficiency of support staff tasks 
+    \item Dramatically improved speed and efficiency of support staff tasks
             by instituting standardized workflows and deploying tools and automations
             for data verification and management
-            utilizing Jupyter Notebooks in Python
+            utilizing Jupyter Notebooks in Python for Geoserver and Postgres
 
-    \item Established reporting infrastructure and interactive dashboards
+    \item Established reporting infrastructure
             to provide geospatial reports and analyses on
             scheduled basis to support project management and administrative business processes,
             deployed on Azure with Docker and Python
 
-    \item Reduced time to create tools and services by
-            developing reusable library in Python to automate the configuration and management of
+    \item Developed reusable library in Python to automate the configuration and management of
             mapping platform comprising more than 7000 lines of code
 
-    \item Created automated data cleaning and verification pipeline to consolidate geospatial data
+    \item Created automated data cleaning and verification ETL pipeline to consolidate geospatial data
             from partner organizations processing over 6.5 million features per day
             using containerized infrastructure on Azure
+
+    \item Managed ETL pipeline and API documentation in Confluence along with support requests in Jira
 
 \end{jobtasklist}
 
@@ -351,22 +354,29 @@ meeting user needs and enhancing spatial data accessibility.
     \tagged{DATACV}{
         \item Developed and deployed targeted surveys providing insights into
                 customer engagement and product utilization
+
         \item Improved results by working closely with clients to deeply understand their
                 needs and requirements
+
         \item Increased scale and analysis turnaround by automating end-to-end process
                 to verify, clean, consolidate and analyze data in Python
+
         \item Improved depth of analysis by incorporating concomitant datasets and creating
                 reporting pipeline in Python
-        \item Deployed interactive dashboards and visualizations 
+
+        \item Deployed interactive dashboards and visualizations
                 to facilitate access to data and develop insights
     }
     \tagged{GISCV}{
         \item Developed and deployed targeted surveys providing insights into
                 customer engagement and product utilization
-        \item Improved results by working closely with clients to deeply understand their
-                needs and requirements
+
+        \item Improved results by closely collaborating with clients to thoroughly understand
+                their needs and requirements
+
         \item Increased scale and analysis turnaround by automating end-to-end process
                 to verify, clean, consolidate and analyze data in Python and ArcPy
+
         \item Improved depth of analysis by incorporating related spatial data and creating
                 reporting pipeline in ArcGIS Pro
     }
@@ -404,7 +414,7 @@ meeting user needs and enhancing spatial data accessibility.
                 ensuring uninterrupted stream of ridership data
 
         \item Performed statistical and spatial analysis on ridership data for administrative
-                and planning departments, preparing reports and summaries in ArcGIS,
+                and planning departments, preparing reports and summaries in ArcGIS and FME,
                 directly supporting decision making for the management and planning of the
                 transit network
 
@@ -419,13 +429,13 @@ meeting user needs and enhancing spatial data accessibility.
                 quality of regional reporting systems
     }
     \tagged{GISCV}{
-        \item Deployed reporting and analysis system, built with Python and Jupyter Notebooks,
-            processing 150,000+ transactions per day from a fleet of 700+ vehicles
-            providing detailed insights into transport ridership patterns
+        \item Deployed spatial ETL pipeline, built with Python and Jupyter Notebooks,
+                processing 150,000+ transactions per day from a fleet of 700+ vehicles
+                providing detailed insights into transport ridership patterns
 
         \item Developed performance metrics system to monitor security and quality
-            of regional reporting systems improving alerting and notification of
-            farebox security incidents and technical problems
+                of regional reporting systems improving alerting and notification of
+                farebox security incidents and technical problems
 
         \item Created continuous monitoring system with multiple departments
                 ensuring uninterrupted stream of ridership data
@@ -439,8 +449,8 @@ meeting user needs and enhancing spatial data accessibility.
                 with Python, ArcGIS, and ArcPy
 
         \item Received the 2015 corporate Recognizing Excellence and Values award
-            for helping to create a cross-departmental team that significantly
-            improved transit vehicle farebox data collection
+                for helping to create a cross-departmental team that significantly
+                improved transit vehicle farebox data collection
     }
 
 
