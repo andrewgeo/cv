@@ -1,0 +1,75 @@
+SUMMARY
+Highly motivated Data Scientist with over 9 years of experience designing, spreadsheets, charts, maps, and data visualizations to support information sharing. Advanced knowledge of Python, and concomitant data-processing libraries, along with R and SQL to discover patterns, meaningful relationships, anomalies, and trends in large-scale datasets. Proven ability to collaborate effectively with cross-functional teams across organizations
+
+SKILLS
+
+Software development:
+Python: Data processing with Pandas, Numpy, Scikit-learn
+Development of ETL pipelines
+Test-Driven Development with Pytest
+REST API development with FastAPI
+SQL: PostgreSQL/PostGIS - complex queries, stored procedures, functions
+R: Data cleaning, analysis, and visualization
+GIT version control - code management, collaboration
+
+Cloud computing:
+AWS Certified Cloud Practitioner Certification
+Azure Fundamentals Certification
+Docker containerization setup and management
+Terraform IaC
+
+Technical proficiencies:
+GIS: Expert in ESRI ArcGIS Pro and QGIS
+Linux CLI and shell scripting
+
+
+EXPERIENCE
+
+Congruex
+Spatial Data Engineer
+San Diego, CA
+June 2020 - Current
+• Developed and deployed a cloud-based API infrastructure using Python and FastAPI on Azure to deliver 19 geospatial analysis, reporting, and data management services, enhancing functionality of mapping system for various departments at Congruex.”
+• Engineered data analyses in Python with Jupyter Notebooks, GeoPandas, Shapely and other spatial libraries increasing access to corporate spatial data warehouse for project managers
+• Trained GIS staff to support management of corporate mapping platform ensuring reliability and stability of spatial database, map servers, GIT, Linux and concomitant systems
+• Dramatically improved speed and efficiency of support staff tasks by making routine geoprocessing workflows faster and more efficient; deploying tools and automations for data verification and management utilizing Jupyter Notebooks in Python for Geoserver and Postgres
+• Created automated data cleaning and quality assurance spatial ETL pipeline to consolidate geospatial data from partner organizations processing over 13 million features per day using containerized infrastructure on Azure
+
+Freelance
+Data Analyst
+San Diego, CA
+January 2019 - May 2020
+• Developed and deployed targeted surveys providing insights into customer engagement and product utilization
+• Improved results by working closely with clients to deeply understand their needs and requirements
+• Increased scale and analysis turnaround by automating end-to-end process to verify, clean, consolidate and analyze data in Python
+• Improved depth of analysis by incorporating concomitant datasets and creating reporting pipeline in Python
+• Deployed interactive dashboards and visualizations to facilitate access to data and develop insights
+
+BC Transit
+Geospatial Data Analyst
+Victoria, Canada
+January 2013 - October 2018
+• Performed statistical and spatial analysis on ridership data for administrative and planning departments, preparing reports and summaries directly supporting decision making for the management and planning of the transit network
+• Deployed reporting and analysis system, built with Python and Jupyter Notebooks, processing 150,000+ transactions per day from a fleet of 700+ vehicles providing detailed insights into transport ridership patterns
+• Developed performance metrics system to monitor security and quality of regional reporting systems improving alerting and notification of farebox security incidents and technical problems
+• Created continuous monitoring system with multiple departments ensuring uninterrupted stream of transportation ridership data
+• Managed updates and integration of economic, demographic and transportation data into the corporate spatial data warehouse and maintained data governance processes and procedures
+• Received the 2015 corporate Recognizing Excellence and Values award for helping to create a cross-departmental team that significantly improved transit vehicle farebox data collection
+
+
+EDUCATION
+
+Udacity Nanodegree
+Bertelsmann Scholarship, AI Programming with Python
+
+Queen’s University
+Master of Science, Computer Science
+Kingston, Canada
+
+University of Ottawa
+Graduate Diploma, International Development
+Ottawa, Canada
+
+Queen’s University
+Bachelor of Science, Psychology & Computer Science
+Kingston, Canada

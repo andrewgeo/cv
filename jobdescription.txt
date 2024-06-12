@@ -1,0 +1,62 @@
+San Diego Association of Governments
+Data Scientist I/II/Associate
+
+DEPARTMENT Data Science
+
+DIVISION Program Management, Data Acquisition, & Quality Assurance/ Quality Control
+
+Description
+Overview of the Data Science Department and the Data Quality Assurance/Quality Control Team The Data Science Department provides SANDAG member agencies, elected officials, other organizations, and the public with information and technical resources for regional planning, funding, and policymaking efforts. The department represents a broad range of expertise from land use and transportation modeling, applied social research, public safety, demographics, economics, and quality assurance. The information the department gathers, analyzes, produces, delivers, and maintains is essential to the success of SANDAG.
+
+The Data Quality Assurance/Quality Control team provides independent verification of data acquired or produced by SANDAG modeling, forecasting, analysis, mapping, and visualization efforts. In addition to conducting data verification steps, the team also develops and implements formalized policies and processes around data quality management.
+
+Role
+The Data Science Department is hiring a Data Scientist in the Data Quality Assurance/Quality Control team. Under supervision from the hiring manager, the position will support the development and implementation of quality control checks on datasets used and produced by teams across the agency to ensure quality and reliability.
+
+Salary Range:
+This position will be filled at the I, II, or associate level depending on qualifications and experience of the selected candidate.
+Annual Salary Ranges:
+Data Scientist I: $72,197-$111,925
+Data Scientist II: $79,622-$123,427
+Associate Data Scientist: $92,206-$142,938
+
+Job Responsibilities
+• Analyze and validate regional economic, demographic, land use, and transportation data for use in operational, procedural, and policy decision-making activities; interpret multi-disciplinary data demonstrating a thorough understanding of issues that could affect the validity and reliability of information.
+• Develop and perform quality control tests and analysis of data using tools such as Python, R, ArcGIS, and SQL to identify and report data anomalies and identify root cause patterns.
+• Examine datasets and supporting documentation to identify risks and problem areas and recommend standards, policies, and procedures to facilitate a comprehensive data quality management system.
+• Support Peer Review Process through review of datasets and methodologies, including suggestions for improvement as well as documentation, including meeting notes and action items.
+• Create and maintain documentation related to data compliance, business rules, data flows, process flows, and reporting.
+• Coordinate the preparation of metrics and statistical reports, perform reviews, and complete special studies; prepare spreadsheets, charts, maps, and data visualizations to support information sharing.
+• Participate on inter-departmental and interagency teams assembled for various agency projects.
+• Prepare and present written, oral, and visual reports and recommendations to various teams and upper management.
+
+Typical Qualifications
+An ideal candidate for this position would be technically skilled (intermediate-advanced level knowledge of programming languages such as Python/R/SQL), organized, having a strong aptitude for analytical thinking and problem solving, and can be relied upon to meet deadlines while working on multiple projects. Excellent organizational skills, attention to detail, and ability to maintain a high level of accuracy are essential. Strong and effective communication skills and an ability to work collaboratively are required for this role.
+
+• The minimum education, training, and experience include a bachelor’s degree with major course work in data science, computer science, management information systems, regional planning, geography, demography, economics, statistics, mathematics or a related field, and one to three years of professional experience in data analysis and programming.
+• Intermediate-advanced level programming experience in Python (and other object-oriented program languages) is critical.
+• Knowledge of design principles for relational database management systems; experience creating SQL queries, stored procedures, and data views; familiarity with MS SQL Server or other enterprise relational database systems.
+• Experience using geographic information system software such as ESRI ArcGIS or QGIS.
+• Experience using Business Intelligence/Information Sharing software (Power BI, Tableau, etc.) to create reports and dashboards.
+• Experience updating and maintaining project databases, files, and records, including data documentation.
+• Knowledge of quality assurance and quality control practices used for validating data and ensuring data accuracy and integrity, including statistical analysis and sampling techniques, preferably for demographic and economic data.
+• Experience with data analysis and research methodologies; knowledge of data acquisition and quality control methods used for gathering and compiling various types of information; knowledge of factors that contribute to the reliability and integrity of collected data.
+• Experience analyzing, organizing, interpreting, and exploring data with the ability to discover patterns, meaningful relationships, anomalies, and trends.
+• Experience communicating highly technical information effectively to a broad range of audiences
+• Familiarity with the principles, practices, and objectives of regional planning and forecasting.
+• Familiarity with formalized data governance processes and procedures.
+
+Benefits
+
+We offer a complete benefits package to full-time employees including:
+• Hybrid work options
+• 9/80 flexible work schedule
+• Pay-for-performance merit increases
+• Retirement - Defined Benefit Plan with the California Public Employees' Retirement System (CalPERS)
+• Retirement - 457 Defined Contribution Plan with Voya
+• Excellent health insurance options for employees and their eligible dependents
+• Free dental and vision insurance for employees and their eligible dependents
+• Education Assistance of up to $5,250 a year for regular employees
+• Free transit pass for use throughout the San Diego region, bus, Rapid Express, Trolley, and COASTER
+• Paid time off including 12 paid holidays, 2 floating holiday days, generous paid time off (PTO) per year, depending on length of service
+

@@ -1,0 +1,48 @@
+Data Engineer - National Bathymetry
+Ocean Associates, Inc. · United States · 3 days ago · 57 applicants
+
+About the job
+Ocean Associates Inc. (OAI) seeks 4 full-time Data Engineers to support National Oceanic and Atmospheric Administration (NOAA), National Ocean Service (NOS), Office of Coast Survey (OCS). OCS is the nation’s nautical chart maker. If you are looking to be an instrumental part of a growing, employee and customer-focused company working on exciting issues in environmental science and other marine/coastal resources, we want to hear from you!
+OCS is mandated by Congress to build and maintain products in support of safe navigation. In addition to maintaining the national suite of more than 1,000 nautical charts, OCS conducts hydrographic surveys. These products support commercial shipping, the fishing industry, United States Navy and Coast Guard operations, state and local governments, geographic information system (GIS) users, and recreational boaters throughout the United States. 
+OCS’s National Bathymetric Source (NBS) program is charged with building the national bathymetry from the best available data to support OCS’s mandate. The NBS is designed to be the nation’s curated and regularly maintained hydrographic data compilation collected by NOAA and other providers. The Data Engineers will provide overall support to this team and assist in the design, development and improvements of all NBS infrastructure and workflows.
+
+
+Baseline Responsibilities:
+- Support scientific, engineering, and/or computer applications techniques.
+- Provides advice and counsel to program management through broad technical specialization of scientific theories and principles.
+- Find innovation, imaginative, and cost-effective solutions to complex problems;
+- Develop and apply advanced methods, theories, and research techniques in the investigation and fulfillment of complex system requirements;
+- Evaluate and apply new methodologies for problem-resolution while ensuring that systems are in compliance with organizational requirements.
+- Analyze agency needs to determine functional requirements, perform functional allocation to identify required tasks and their interrelationships. 
+- Develop recommendations for organizational process changes to include new solutions and new technologies.
+- Build, testing, and maintaining product pipeline workflows, revolving around bathymetric data, models, and products and determining spatial and temporal extents of final model results.
+
+Key Responsibilities:
+- Workflow automation, including automatically pulling and processing data into formats for review by the team using Python;
+- New format and package integration including the reading and writing data and metadata using Python;
+- Package development including tighter integration with open source projects, such as PROJ and GDAL;
+- The development and support of new standards, such as the IHO S-100 standard;
+- Web services to support internal use of high resolution bathymetry using QGIS server, Map Server, or Geoserver. 
+- QGIS workflow development including plugin development to support the NBS operations team;
+- GDAL and PROJ development to support NBS work;
+- Documentation, standardization, optimization, and improvement of existing NBS Python code;
+- Writing and maintaining unit testing of new and existing NBS Python code;
+- Containerization of existing code into micro services using Docker or Podman while building deployment solutions for production code. 
+
+Start Date: As soon as possible
+
+Salary and Benefits: Full time. Salary commensurate with experience, $48 to $58 per hour. Generous employee benefits.
+
+Location: This is a remote position although work may be performed at one of the NOAA Facilities in Silver Spring, Maryland (NOAA Headquarters); Seattle, Washington; or Norfolk, Virginia.
+
+Required Skills /Education/ Certifications & Qualifications:
+- Master’s degree in engineering, hydrographic science, physics, oceanography, Geographic Information Systems, or closely related discipline and a minimum of 8 years of directly related experience; or a Bachelor’s degree + 6 years of experience relative to the specific position; or 12 years of directly related experience;
+- Diploma, certification, or equivalent experience in one or more of the following areas of expertise: Hydrographic Science / Physics, Datums, coordinate reference systems and transformations, Python, GIS Web Services, C / C++ Open Source Experience, Data engineering, System design, Unit testing, Postgres, Database design and administration;
+- Expertise with Microsoft Office applications and Google’s collaboration suite (e.g., Docs, Sheets, Slides);
+- Strong written and verbal communication skills, including a demonstrated ability to convey complex scientific information clearly and succinctly;
+- Excellent organizational skills; 
+- Strong attention to detail, ensuring that all work is complete, timely and accurate according to policy guidance and standard operating procedures; 
+- Demonstrated ability to self-manage workload and meet variable (but often short) deadlines for multiple concurrent tasks; 
+- Excellent interpersonal skills, particularly the ability to work independently as well as with others to develop, revise, and share information;
+- Ability to work effectively both individually and collaboratively in a team/group setting; and
+- Ability to receive constructive feedback and implement appropriate action.
