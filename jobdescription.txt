@@ -1,62 +1,103 @@
-San Diego Association of Governments
-Data Scientist I/II/Associate
+Your task is to read through the resume, the text between triple curved brackets ((( ))) and the job description, the text between <<< >>> brackets. Compare how a resume ranks for the given job description.
+Please create a detailed report output with the following features:
+Resume rank: rank the resume for the given job description out of a 100.
+Detailed comparison: detailed comparison of the pros and cons of the candidate based on the resume and job description
+Suggestions on improvement: list down points that the candidate can change within the resume to better fit the job description.
+Example bullets: Modify the existsing project descriptions to fit to the Job Description.
+Focus on both, tangible and intangible skills. Try and keep it as concise are possible.
 
-DEPARTMENT Data Science
+Job Description: <<<
+At Allstate, great things happen when our people work together to protect families and their belongings from life’s uncertainties. And for more than 90 years our innovative drive has kept us a step ahead of our customers’ evolving needs. From advocating for seat belts, air bags and graduated driving laws, to being an industry leader in pricing sophistication, telematics, and, more recently, device and identity protection. 
 
-DIVISION Program Management, Data Acquisition, & Quality Assurance/ Quality Control
+Job Description
+As a Geospatial Data Scientist, you’ll be responsible for developing geospatial analytical solutions independently and in collaboration with other data scientists. This will include identifying, retrieving, and utilizing both spatial and non-spatial data from a variety of sources such as Allstate databases, vended data, and public data. You’ll also support the development of new machine learning models, data pipelines, and analytics to provide deep insights and support business decisions. Creation of deployable geospatial products, including spatial web applications leveraged by thousands of users to support data analysis and analytical tasks will also be an expectation. You will manage projects of small to medium complexity and will work both independently and as a member of a team.
 
-Description
-Overview of the Data Science Department and the Data Quality Assurance/Quality Control Team The Data Science Department provides SANDAG member agencies, elected officials, other organizations, and the public with information and technical resources for regional planning, funding, and policymaking efforts. The department represents a broad range of expertise from land use and transportation modeling, applied social research, public safety, demographics, economics, and quality assurance. The information the department gathers, analyzes, produces, delivers, and maintains is essential to the success of SANDAG.
+Key Responsibilities:
+Create and support machine learning models (ex: optimization, clustering, linear regression, etc.) using geospatial data.
+Create deployable mapping products and applications using ArcGIS Enterprise, python, and other scripting languages to support improved business outcomes.
+Work with team members and business partners to understand requirements, identifying the data sources and methods required to deliver a product that achieves business goals.
+Contribute to the maintenance of the ArcGIS Enterprise technology stack by troubleshooting issues, working towards robustness efforts, and providing user education.
+Contribute to the maintenance of a geospatial data library with sufficient metadata and documentation to maintain reusable spatial data that will support numerous customer requirements.
+Help troubleshoot data quality and modeling issues – identifying root cause/system & documentation/communication of resolution.
+Maintain and enhance skills in geospatial analysis and data science and actively provide leadership in the application of these skills to solve core business problems.
+Supervisory Responsibilities:
 
-The Data Quality Assurance/Quality Control team provides independent verification of data acquired or produced by SANDAG modeling, forecasting, analysis, mapping, and visualization efforts. In addition to conducting data verification steps, the team also develops and implements formalized policies and processes around data quality management.
+This job does not have supervisory duties.
 
-Role
-The Data Science Department is hiring a Data Scientist in the Data Quality Assurance/Quality Control team. Under supervision from the hiring manager, the position will support the development and implementation of quality control checks on datasets used and produced by teams across the agency to ensure quality and reliability.
+Preferred Qualifications:
 
-Salary Range:
-This position will be filled at the I, II, or associate level depending on qualifications and experience of the selected candidate.
-Annual Salary Ranges:
-Data Scientist I: $72,197-$111,925
-Data Scientist II: $79,622-$123,427
-Associate Data Scientist: $92,206-$142,938
+Education and Experience
+Graduate degree in data science, computer science, or a field related to geospatial analysis, such as Geographic Information Systems, Geography, Environmental Science or Geology.
+3 years of related experience
+Experience with ArcGIS Enterprise, python, JavaScript, Linux systems, and SQL
+Certificates, Licenses, Registrations
+ESRI Desktop, Developer, Enterprise Certification or GISP Certification
 
-Job Responsibilities
-• Analyze and validate regional economic, demographic, land use, and transportation data for use in operational, procedural, and policy decision-making activities; interpret multi-disciplinary data demonstrating a thorough understanding of issues that could affect the validity and reliability of information.
-• Develop and perform quality control tests and analysis of data using tools such as Python, R, ArcGIS, and SQL to identify and report data anomalies and identify root cause patterns.
-• Examine datasets and supporting documentation to identify risks and problem areas and recommend standards, policies, and procedures to facilitate a comprehensive data quality management system.
-• Support Peer Review Process through review of datasets and methodologies, including suggestions for improvement as well as documentation, including meeting notes and action items.
-• Create and maintain documentation related to data compliance, business rules, data flows, process flows, and reporting.
-• Coordinate the preparation of metrics and statistical reports, perform reviews, and complete special studies; prepare spreadsheets, charts, maps, and data visualizations to support information sharing.
-• Participate on inter-departmental and interagency teams assembled for various agency projects.
-• Prepare and present written, oral, and visual reports and recommendations to various teams and upper management.
+Skills
+ESRI Software, Geospatial Data, Machine Learning, Python (Programming Language)
 
-Typical Qualifications
-An ideal candidate for this position would be technically skilled (intermediate-advanced level knowledge of programming languages such as Python/R/SQL), organized, having a strong aptitude for analytical thinking and problem solving, and can be relied upon to meet deadlines while working on multiple projects. Excellent organizational skills, attention to detail, and ability to maintain a high level of accuracy are essential. Strong and effective communication skills and an ability to work collaboratively are required for this role.
+Compensation
+Compensation offered for this role is $78,600.00 – 142,275.00 annually and is based on experience and qualifications.
+The candidate(s) offered this position will be required to submit to a background investigation.
 
-• The minimum education, training, and experience include a bachelor’s degree with major course work in data science, computer science, management information systems, regional planning, geography, demography, economics, statistics, mathematics or a related field, and one to three years of professional experience in data analysis and programming.
-• Intermediate-advanced level programming experience in Python (and other object-oriented program languages) is critical.
-• Knowledge of design principles for relational database management systems; experience creating SQL queries, stored procedures, and data views; familiarity with MS SQL Server or other enterprise relational database systems.
-• Experience using geographic information system software such as ESRI ArcGIS or QGIS.
-• Experience using Business Intelligence/Information Sharing software (Power BI, Tableau, etc.) to create reports and dashboards.
-• Experience updating and maintaining project databases, files, and records, including data documentation.
-• Knowledge of quality assurance and quality control practices used for validating data and ensuring data accuracy and integrity, including statistical analysis and sampling techniques, preferably for demographic and economic data.
-• Experience with data analysis and research methodologies; knowledge of data acquisition and quality control methods used for gathering and compiling various types of information; knowledge of factors that contribute to the reliability and integrity of collected data.
-• Experience analyzing, organizing, interpreting, and exploring data with the ability to discover patterns, meaningful relationships, anomalies, and trends.
-• Experience communicating highly technical information effectively to a broad range of audiences
-• Familiarity with the principles, practices, and objectives of regional planning and forecasting.
-• Familiarity with formalized data governance processes and procedures.
+Joining our team isn’t just a job — it’s an opportunity. One that takes your skills and pushes them to the next level. One that encourages you to challenge the status quo. And one where you can impact the future for the greater good.  
 
-Benefits
+You’ll do all this in a flexible environment that embraces connection and belonging. And with the recognition of several inclusivity and diversity awards, we’ve proven that Allstate empowers everyone to lead, drive change and give back where they work and live. 
+>>>
 
-We offer a complete benefits package to full-time employees including:
-• Hybrid work options
-• 9/80 flexible work schedule
-• Pay-for-performance merit increases
-• Retirement - Defined Benefit Plan with the California Public Employees' Retirement System (CalPERS)
-• Retirement - 457 Defined Contribution Plan with Voya
-• Excellent health insurance options for employees and their eligible dependents
-• Free dental and vision insurance for employees and their eligible dependents
-• Education Assistance of up to $5,250 a year for regular employees
-• Free transit pass for use throughout the San Diego region, bus, Rapid Express, Trolley, and COASTER
-• Paid time off including 12 paid holidays, 2 floating holiday days, generous paid time off (PTO) per year, depending on length of service
+Resume Text: (((
+SUMMARY
+Data Engineer with 10+ years of experience architecting and deploying robust data pipelines and ETL processes. Proficient in leveraging cloud platforms (AWS, Azure) and containerization technologies (Docker) to build scalable data workflows. Advanced knowledge of Python and related data-processing libraries, along with R and SQL, to manage, clean, and verify very large datasets.
 
+SKILLS
+
+Software development:
+Python: Data processing with Pandas, NumPy, Scikit-learn
+REST API development with FastAPI
+SQL: complex queries, stored procedures, functions
+R: Data cleaning, analysis, and visualization
+
+Cloud computing:
+AWS Certified Cloud Practitioner Certification
+Azure Fundamentals Certification
+Docker containerization setup and management
+Terraform IaC
+
+Technical proficiencies:
+Unit testing, verification, and analysis
+GIT version control - code management, collaboration
+Linux CLI and shell scripting
+
+EXPERIENCE
+
+Picarro Inc.  GIS Data Engineer Santa Clara, CA June 2024 - April 2025
+• Enhanced the management and efficiency of spatial data ETL pipelines, resulting in improved data flow reliability and reduced manual intervention, by developing custom monitoring and recovery tools using Python and FME.
+• Significantly reduced ETL process development time, leading to faster implementation cycles, by creating a Python library that streamlined access to corporate data sources and systems.
+• Enabled high-volume geospatial data transfer, successfully moving hundreds of thousands of features daily from the core application database to ArcGIS Online (AGOL) through the management and optimization of application APIs.
+
+Congruex Spatial Data Engineer San Diego, CA June 2020 - June 2024
+• Developed and deployed a cloud-based API infrastructure (Python/FastAPI on Azure) delivering 19 geospatial analysis, reporting, and data management services, enhancing the mapping system’s capabilities and providing critical data insights to various departments.
+• Developed Python-based data analyses (Jupyter Notebooks, GeoPandas, Shapely) to enhance access to the spatial data warehouse.
+• Trained GIS staff to support management of corporate mapping platform ensuring reliability and stability of the spatial database, map servers, Git, Linux and related systems.
+• Dramatically improved the speed and efficiency of support staff tasks by streamlining routine geoprocessing workflows; deployed tools and automations for data verification and management using Jupyter Notebooks in Python for Geoserver and PostgreSQL.• Developed and implemented an automated data cleaning and quality assurance spatial ETL pipeline on Azure (containerized) to consolidate geospatial data from partner organizations, processing over 13 million features daily and ensuring data integrity.
+
+Freelance Data Analyst San Diego, CA January 2019 - May 2020
+• Boosted survey campaign effectiveness by consulting closely with clients to develop targeted strategies, increasing satisfaction and actionable insights.
+• Developed and deployed targeted surveys providing insights into customer engagement and product utilization.
+• Increased scale and analysis turnaround by automating end-to-end process to verify, clean, consolidate and analyze data in Python and ArcPy.
+
+BC Transit Geospatial Data Analyst Victoria, Canada January 2013 - October 2018
+• Enhanced transit network decision-making by delivering statistical and spatial analysis reports and summaries on ridership data, enabling more informed management and planning strategies.
+• Built a Python-based spatial ETL pipeline processing 150,000+ transactions per day from a fleet of 700+ vehicles providing detailed insights into transport ridership patterns.
+• Developed performance metrics system to monitor security and quality of regional reporting systems improving alerting and notification of farebox security incidents and technical problems.
+• Created continuous monitoring system with multiple departments ensuring an uninterrupted stream of ridership data providing up to date statistical reports and analysis.
+• Managed updates and integration of economic, demographic, and transportation data into the corporate spatial data warehouse and maintained data governance processes and procedures.
+• Received the 2015 Corporate Recognizing Excellence and Values award for helping to create a cross-departmental team that significantly improved transit vehicle farebox data collection.
+
+EDUCATION
+
+Udacity Nanodegree (Bertelsmann Scholarship) AI Programming with Python
+Queen’s University Master of Science, Computer ScienceKingston, Canada
+University of Ottawa Graduate Diploma, International DevelopmentOttawa, Canada
+Queen’s University Bachelor of Science, Psychology & Computer ScienceKingston, Canada
+)))
