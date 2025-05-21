@@ -110,8 +110,8 @@
     %\usetag{QRCODE}
 
     % CV TYPE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    \usetag{DATACV}
-    \usetag{GISCV}
+    \usetag{DATACV}
+%    \usetag{GISCV}
 
     % PERSONAL DETAILS
     %    CVname
@@ -174,12 +174,9 @@
 \header{SUMMARY}
 %Who , business functions / core competencies / unique value prop
 \tagged{DATACV}{
-Quality-focused {\JobTitle} with over 9 years of experience designing
-spreadsheets, charts, maps, and data visualizations to support information sharing.
-Advanced knowledge of Python and related data-processing libraries,
-along with R and SQL to discover patterns, meaningful relationships, anomalies, and trends
-in large-scale datasets.
-Proven ability to collaborate effectively with cross-functional teams across organizations
+{\JobTitle} with 10+ years of experience architecting and deploying robust data pipelines and ETL processes.
+Proficient in leveraging \impt{cloud platforms (AWS, Azure)} and containerization technologies (Docker) to build scalable data workflows.
+Advanced knowledge of Python and related data-processing libraries, along with R and SQL, to manage, clean, and verify very large datasets.
 %developing, and maintaining data pipelines and integrations to solve real-world problems and improve decision making.
 %drive the generation of data driven operational insights.
 %Experienced in \impt{cloud platforms} (AWS, Azure) and containerization (Docker) for scalable data workflows.
@@ -213,15 +210,14 @@ Strong client collaboration background, working closely with stakeholders to gat
 \header{SKILLS}
     \begin{taggedblock}{DATACV}
         \begin{skillslist}
-            Software development:&
-                \impt{Python}: Data processing with Pandas, NumPy, Scikit-learn \linebreak
-                Development of Spatial ETL pipelines \linebreak
-                %Proficient in Jupyter Notebooks \linebreak
-                Test-Driven Development with Pytest \linebreak
-                REST API development with FastAPI \linebreak
+            Databases:&
+                Expert experience with: PostgreSQL, Oracle, SQL Server \linebreak
                 \impt{SQL}: complex queries, stored procedures, functions \linebreak
-                \impt{R}: Data cleaning, analysis, and visualization \linebreak
-                GIT version control - code management, collaboration \linebreak
+                %Development of Spatial ETL pipelines \linebreak
+                %Proficient in Jupyter Notebooks \linebreak
+                %Test-Driven Development with Pytest \linebreak
+                %REST API development with FastAPI \linebreak
+                %\impt{R}: Data cleaning, analysis, and visualization \linebreak
                 \\
 %            Data analysis: &
 %                Statistical analysis, cleaning, and ETL with Python,
@@ -239,7 +235,10 @@ Strong client collaboration background, working closely with stakeholders to gat
                 Terraform IaC \linebreak
                 \\
             Technical proficiencies:&
-                \impt{GIS}: Expert in ESRI ArcGIS Pro and QGIS \linebreak
+                \impt{Python}: Data processing with Pandas, NumPy, Scikit-learn \linebreak
+                Unit testing, verification, and analysis\linebreak
+                GIT version control - code management, collaboration \linebreak
+%                \impt{GIS}: Expert in ESRI ArcGIS Pro and QGIS \linebreak
 %                \impt{Geoserver} administration, authorization, layer configuration, and styling \linebreak
 %                Apache Airflow workflow Orchestration: DAG creation and deployment \linebreak
                 Linux CLI and shell scripting \linebreak
@@ -320,15 +319,14 @@ Strong client collaboration background, working closely with stakeholders to gat
 
 \begin{jobtasklist}
     % Accomplished X as measured by Y by doing Z
-    \item Led the enhancement of data ETL pipelines using Python and FME, resulting in 
-            \impt{improved data flow reliability}, 
-            reduced manual intervention, and more efficient data processing for downstream analytics and reporting.
-    \item  Significantly reduced ETL process development time, leading to \impt{faster implementation cycles},
+    \item  Enhanced the management and efficiency of spatial data ETL pipelines,
+            resulting in improved data flow reliability and reduced manual intervention,
+            by developing custom monitoring and recovery tools using Python and FME.
+    \item  Reduced ETL process development time, leading to faster implementation cycles,
             by creating a Python library that streamlined access to corporate data sources and systems.
     \item  Enabled high-volume geospatial data transfer, successfully moving hundreds of thousands of
-            features daily from the core application database to ArcGIS Online (AGOL)
-            and ArcGIS Enterprise
-            through the \impt{management and optimization of application APIs}.
+            features daily from the core application database to ArcGIS Online (AGOL) through API
+            management and optimization.
 \end{jobtasklist}
 
 
@@ -355,16 +353,17 @@ Strong client collaboration background, working closely with stakeholders to gat
             to various departments and improving data accessibility.
     \item Developed Python-based data analyses (Jupyter Notebooks, GeoPandas, Shapely)
             to enhance access to the spatial data warehouse.
-    \item Trained GIS staff to support management of corporate mapping platform ensuring reliability
+    \item Trained GIS staff to support the management of corporate mapping platform ensuring reliability
             and stability of the
             spatial database, map servers, Git, Linux and related systems.
 
 %    \item Provided end-user support and training
 %            to technical and non-GIS users of corporate web-mapping platform
 
-    \item Significantly improved operational efficiency by streamlining routine data processing workflows 
-            through the development and deployment of automation tools using Python and Jupyter Notebooks, 
-            \impt{enhancing data verification and management capabilities}.
+    \item Improved the speed and efficiency of support staff tasks
+            by streamlining routine geoprocessing workflows;
+            deployed tools and automations for data \impt{verification and management} using
+            Jupyter Notebooks in Python for Geoserver and PostgreSQL.
 %    \item Established reporting infrastructure
 %            to provide geospatial reports and analyses on
 %            scheduled basis to support project management and administrative business processes,
@@ -398,31 +397,27 @@ Strong client collaboration background, working closely with stakeholders to gat
 
 \begin{jobtasklist}
     % Accomplished X as measured by Y by doing Z
-    \tagged{DATACV}{
-        \item Developed and deployed targeted surveys, providing insights into
-                customer engagement and product utilization.
+%        \item Developed and deployed targeted surveys, providing insights into
+%                customer engagement and product utilization.
+%
+%        \item Improved results by working closely with clients to deeply understand their
+%                needs and requirements.
+%
+%        \item Increased the scale and speed of analysis turnaround by automating end-to-end processes
+%                to \impt{verify, clean, consolidate and analyze data in Python}.
+%
+%        \item Improved depth of analysis by incorporating concomitant datasets and creating
+%                reporting pipelines in Python.
+%
+%        \item Deployed interactive dashboards and visualizations
+%                to facilitate access to data and develop insights.
 
-        \item Improved results by working closely with clients to deeply understand their
-                needs and requirements.
-
-        \item Increased the scale and speed of analysis turnaround by automating end-to-end processes
-                to \impt{verify, clean, consolidate and analyze data in Python}.
-
-        \item Improved depth of analysis by incorporating concomitant datasets and creating
-                reporting pipelines in Python.
-
-        \item Deployed interactive dashboards and visualizations
-                to facilitate access to data and develop insights.
-    }
-    \tagged{GISCV}{
         \item Boosted survey campaign effectiveness by consulting closely with clients
                 to develop targeted strategies, increasing satisfaction and actionable insights.
         \item Developed and deployed targeted surveys providing insights into
                 customer engagement and product utilization.
-
         \item Increased scale and analysis turnaround by automating end-to-end process
                 to \impt{verify, clean, consolidate and analyze data} in Python and ArcPy.
-    }
 
 \end{jobtasklist}
 
@@ -449,24 +444,24 @@ Strong client collaboration background, working closely with stakeholders to gat
             using GIS tools to \impt{directly support strategic decision-making} for network management and planning, 
             demonstrating the ability to translate data into actionable insights for stakeholders.
 
-        \item Deployed reporting and analysis system, built with Python and Jupyter Notebooks,
-                processing 150,000+ transactions per day from a fleet
-                of 700+ vehicles,
-                providing detailed insights into transport ridership patterns.
+        \item Built a Python-based spatial ETL pipeline
+                \impt{processing 150,000+ transactions per day} from a fleet of 700+ vehicles
+                providing detailed insights into transportation ridership patterns.
 
         \item Developed performance metrics system to monitor security and quality
                 of regional reporting systems improving alerting and notification of
                 farebox security incidents and technical problems.
 
         \item Created \impt{continuous monitoring system} with multiple departments
-                ensuring uninterrupted stream of transportation ridership data.
+                ensuring uninterrupted stream of transportation ridership data
+                and providing up to date statistical reports and analysis.
 
         \item Managed updates and integration of economic,
                 demographic, and transportation data into the
                 corporate spatial data warehouse and maintained
                 \impt{data governance} processes and procedures.
 
-        \item Received the 2015 corporate Recognizing Excellence and Values award
+        \item Received the 2015 Corporate Recognizing \impt{Excellence and Values} Award
                 for helping to create a cross-departmental team that significantly
                 improved transit vehicle farebox data collection.
     }
@@ -496,7 +491,7 @@ Strong client collaboration background, working closely with stakeholders to gat
 %        \item Conducted ongoing GIS data maintenance, manipulation, analysis, extraction, and generation
 %                and managing organizational geospatial data warehouse.
 %
-        \item Received the 2015 Corporate Recognizing \impt{Excellence and Values} award
+        \item Received the 2015 Corporate Recognizing \impt{Excellence and Values} Award
                 for helping to create a cross-departmental team that significantly
                 improved transit vehicle farebox data collection.
     }
