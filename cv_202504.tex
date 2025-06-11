@@ -110,8 +110,8 @@
     %\usetag{QRCODE}
 
     % CV TYPE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    \usetag{DATACV}
-    \usetag{GISCV}
+    \usetag{DATACV}
+%    \usetag{GISCV}
 
     % PERSONAL DETAILS
     %    CVname
@@ -174,9 +174,13 @@
 \header{SUMMARY}
 %Who , business functions / core competencies / unique value prop
 \tagged{DATACV}{
-{\JobTitle} with 10+ years of experience architecting and deploying robust data pipelines and ETL processes.
-Proficient in leveraging \impt{cloud platforms (AWS, Azure)} and containerization technologies (Docker) to build scalable data workflows.
-Advanced knowledge of Python and related data-processing libraries, along with R and SQL, to manage, clean, and verify very large datasets.
+\impt{Expertise in Python programming}, skilled at consolidating large,
+disparate datasets and establishing data quality, metadata, and documentation standards to support data governance policies.
+Proficient in leveraging cloud platforms (AWS, Azure) and containerization technologies (Docker) to build web
+applications and APIs for delivering \impt{data at scale}.
+Foundational experience with \impt{machine learning models} through coursework and projects.
+Effective communication skills for \impt{collaboration and end-user support}.
+
 %developing, and maintaining data pipelines and integrations to solve real-world problems and improve decision making.
 %drive the generation of data driven operational insights.
 %Experienced in \impt{cloud platforms} (AWS, Azure) and containerization (Docker) for scalable data workflows.
@@ -233,8 +237,19 @@ Effective communication skills for \impt{collaboration and end-user support}.
 \header{SKILLS}
     \begin{taggedblock}{DATACV}
         \begin{skillslist}
+            Programming \& Scripting:&
+                Advanced \impt{Python}: Data processing with Pandas, NumPy, Jupyter (Colab) \linebreak
+                \impt{SQL}: spatial queries, stored procedures, and functions \linebreak
+%                Experience with \impt{machine learning} with PyTorch \linebreak
+%                Spatial ETL Pipelines with FME, Python \linebreak
+%                R programming and R Studio \linebreak
+                \impt{ETL Pipeline} Development: FME, Airflow \linebreak
+                REST APIs with FastAPI, Flask \linebreak
+%                Data Manipulation: Power Query, DAX \linebreak
+                Visualization \& Reporting: Microsoft Power BI, Looker \linebreak
+                \\
             Databases:&
-                Expert experience with: PostgreSQL, Oracle, SQL Server \linebreak
+                Professional experience with: PostgreSQL, Oracle, Google BigQuery \linebreak
                 \impt{SQL}: complex queries, stored procedures, functions \linebreak
                 %Development of Spatial ETL pipelines \linebreak
                 %Proficient in Jupyter Notebooks \linebreak
@@ -258,13 +273,12 @@ Effective communication skills for \impt{collaboration and end-user support}.
                 Terraform IaC \linebreak
                 \\
             Technical proficiencies:&
-                \impt{Python}: Data processing with Pandas, NumPy, Scikit-learn \linebreak
                 Unit testing, verification, and analysis\linebreak
                 GIT version control - code management, collaboration \linebreak
-%                \impt{GIS}: Expert in ESRI ArcGIS Pro and QGIS \linebreak
 %                \impt{Geoserver} administration, authorization, layer configuration, and styling \linebreak
 %                Apache Airflow workflow Orchestration: DAG creation and deployment \linebreak
                 Linux CLI and shell scripting \linebreak
+                Agile development with Jira \linebreak
                 \\
         \end{skillslist}
     \end{taggedblock}
@@ -287,7 +301,7 @@ Effective communication skills for \impt{collaboration and end-user support}.
 %                Data Architecture, data modeling, warehousing and analytics \linebreak
 %                \\
             Programming \& Scripting:&
-                Geospatial Programming: C\#/.NET, \impt{Python} (ArcPy, GeoPandas, Rasterio) \linebreak
+                \impt{Python} (ArcPy, GeoPandas, Rasterio) \linebreak
                 \impt{SQL}: spatial queries, stored procedures, and functions \linebreak
                 Arcade \linebreak
 %                Experience with \impt{machine learning} with PyTorch \linebreak
@@ -340,11 +354,11 @@ Effective communication skills for \impt{collaboration and end-user support}.
 
 
 %------------------ Picarro ------------------%
-    \employer
-        {Picarro Inc.}
-        {Santa Clara, CA}
-        {GIS Data Engineer}
-        {June 2024 - April 2025}
+\employer
+    {Picarro Inc.}
+    {Santa Clara, CA}
+    {GIS Data Engineer}
+    {June 2024 - April 2025}
 
 \begin{jobtasklist}
     % Accomplished X as measured by Y by doing Z
@@ -371,7 +385,7 @@ Effective communication skills for \impt{collaboration and end-user support}.
     \employer
         {Congruex}
         {San Diego, CA}
-        {GIS Data Scientist}
+        {GIS Data Engineer}
         {June 2020 - June 2024}
     }
 
@@ -415,7 +429,7 @@ Effective communication skills for \impt{collaboration and end-user support}.
     \employer
         {Freelance}
         {San Diego, CA}
-        {Data Analyst}
+        {GIS Data Analyst}
         {January 2019 - May 2020}
     }
 
@@ -450,69 +464,34 @@ Effective communication skills for \impt{collaboration and end-user support}.
 
 
 %------------------ BC Transit ------------------%
-\tagged{DATACV}{
-    \employer
-        {BC Transit}
-        {Victoria, Canada}
-        {Geospatial Data Analyst}
-        {January 2013 - October 2018}
-    }
-\tagged{GISCV}{
-    \employer
-        {BC Transit}
-        {Victoria, Canada}
-        {GIS Analyst}
-        {January 2013 - October 2018}
-    }
+\employer
+    {BC Transit}
+    {Victoria, Canada}
+    {Geospatial Data Analyst}
+    {January 2013 - October 2018}
 
 \begin{jobtasklist}
-    \tagged{DATACV}{
-        \item Conducted data modeling and analysis on ridership data, generating insightful reports and summaries
+    \item Collaborated closely with planning and administrative staff to develop
+            GIS maps and suitability analyses, consolidating relevant, up-to-date
+            spatial information to directly support regional planning, asset
+            management, and capital improvement projects.
+    \item Built a Python-based spatial ETL pipeline
+            \impt{processing over 150,000 transactions per day}
+            from a fleet of 700+ vehicles, providing detailed insights into transport ridership patterns.
+    \item Developed a performance metrics system to monitor the security and
+            quality of regional reporting systems, improving alerting and
+            notification for farebox security incidents and technical problems.
+    \item Created a continuous monitoring system with multiple departments,
+            ensuring an uninterrupted stream of ridership data that provided
+            up-to-date statistical reports and analysis.
+    \item Conducted data modeling and analysis on ridership data, generating insightful reports and summaries
             using GIS tools to \impt{directly support strategic decision-making} for network management and planning,
             demonstrating the ability to translate data into actionable insights for stakeholders.
-        \item Built a Python-based spatial ETL pipeline
-                \impt{processing 150,000+ transactions per day} from a fleet of 700+ vehicles
-                providing detailed insights into transportation ridership patterns.
-        \item Developed performance metrics system to monitor security and quality
-                of regional reporting systems improving alerting and notification of
-                farebox security incidents and technical problems.
-        \item Created \impt{continuous monitoring system} with multiple departments
-                ensuring uninterrupted stream of transportation ridership data
-                and providing up to date statistical reports and analysis.
-        \item Managed updates and integration of economic,
-                demographic, and transportation data into the
-                corporate spatial data warehouse and maintained
-                \impt{data governance} processes and procedures.
-        \item Received the 2015 Corporate Recognizing \impt{Excellence and Values} Award
-                for helping to create a cross-departmental team that significantly
-                improved transit vehicle farebox data collection.
-    }
-
-    \tagged{GISCV}{
-        \item Collaborated closely with planning and administrative staff to develop
-                GIS maps and suitability analyses, consolidating relevant, up-to-date
-                spatial information to directly support regional planning, asset
-                management, and capital improvement projects.
-        \item Built a Python-based spatial ETL pipeline
-                \impt{processing over 150,000 transactions per day}
-                from a fleet of 700+ vehicles, providing detailed insights into transport ridership patterns.
-        \item Developed a performance metrics system to monitor the security and
-                quality of regional reporting systems, improving alerting and
-                notification for farebox security incidents and technical problems.
-        \item Created a continuous monitoring system with multiple departments,
-                ensuring an uninterrupted stream of ridership data that provided
-                up-to-date statistical reports and analysis.
-        \item Conducted data modeling and analysis on ridership data, generating insightful reports and summaries
-                using GIS tools to \impt{directly support strategic decision-making} for network management and planning,
-                demonstrating the ability to translate data into actionable insights for stakeholders.
 %        \item Conducted ongoing GIS data maintenance, manipulation, analysis, extraction, and generation
 %                and managing organizational geospatial data warehouse.
-        \item Received the 2015 Corporate Recognizing \impt{Excellence and Values Award}
-                for contributing to a cross-departmental team that significantly
-                improved transit vehicle farebox data collection.
-    }
-
-
+    \item Received the 2015 Corporate Recognizing \impt{Excellence and Values Award}
+            for contributing to a cross-departmental team that significantly
+            improved transit vehicle farebox data collection.
 \end{jobtasklist}
 
 
