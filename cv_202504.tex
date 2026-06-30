@@ -165,7 +165,7 @@
 %    {\CVaddress}
     {\CVemail}
 %    {\CVphone}
-    {+1.858.477.8807}
+    {858.477.8807}
     {\CVblogurl}
     {\CVlinkedin}
 
@@ -187,14 +187,35 @@ Effective communication skills for \impt{collaboration and end-user support}.
 
 
 \tagged{GISCV}{
-{\JobTitle} with over 5 years of expertise in \impt{geospatial data infrastructure} 
-supporting analytical workflows across organizations.
-Expert level of Python and SQL, geospatial data formats and PostGIS, AGOL and other geospatial databases.
-Proven experience working with current versions of QGIS and ArcGIS Pro.
+{\JobTitle} with extensive experience designing and implementing automated geospatial data pipelines using open-source GIS tools and software. 
+Proven expertise in Python development, building GIS libraries and automation frameworks in Linux environments. 
+Skilled in processing diverse geospatial formats including orthoimagery, LiDAR point clouds, elevation DEMs, and vector/raster data. 
+Completed coursework in PyTorch and deep learning.
+Combines strong software engineering principles with deep domain knowledge to deliver scalable, production-ready spatial solutions.
 }
 
 \iffalse
-
+Extreamly comfortable working outside of an ArcGIS-centric workflow.
+Extensive experience with Linux, *nix tools including bash.
+• Aggregate data for target regions and ensure that a complete collection of data is available.
+• Research open, public domain, and commercial sensor data sources to determine the areas, quality, and freshness of available data.
+• Utilize open source (e.g. GDAL) and internally developed software tools to preprocess, align, crop, resample, and otherwise prepare data for use.
+• Contribute to our internal tools that process and source geospatial datasets.
+• Partner with groups across the organization to understand needs for GIS data for AI/ML research.
+- Coordinate with AI/ML team to provide diverse data for developing new machine learning algorithms, and the Pipeline and Product teams to provide data to roll out new regions.
+• Partner closely with leadership to understand the high-level product vision.
+• Masters degree in GIS, Computer Science, Engineering, Mathematics, or a related field
+• 4+ years of relevant industry experience in a fast paced, high growth tech environment.
+• Experience with GIS modalities and formats, including at least some of orthoimagery (e.g. GeoTIFF), point
+    clouds such as LiDAR (e.g. LAS/LAZ), vector data (e.g. ESRI Shapefiles, GeoJSON, OSM), raster data
+    storing elevation and terrain information such as DTM, DSM, and DEMs, and raster data storing landcover information.
+• Software engineering experience, including designing and architecting software.
+- Experience in Python for automation of common tasks and/or contributing to our existing tool palette is required.
+• Team-oriented and collaborative approach with a demonstrated aptitude, enthusiasm and willingness to learn new methods, tools, practices and skills.
+• Passion and curiosity for GIS and software engineering.
+• Experience working with open-source GIS libraries and tools, including PROJ and GDAL, for spatial data processing, transformation, and analysis.
+• Enthusiasm for automated development processes and systems.
+>>>>>>> 2026_nbc
 \fi
 
 %================== Skills ==================%
@@ -249,17 +270,17 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
     \begin{taggedblock}{GISCV}
         \begin{skillslist}
             GIS Applications:&
-                QGIS, ESRI ArcGIS Pro \linebreak
+                QGIS, Geoserver, PostgreSQL/PostGIS \linebreak
 %                - including Spatial Analyst, 3D Analyst, and Network Analyst extensions \linebreak
                 \\
-            Geodatabase management:&
-                PostgreSQL/PostGIS, ESRI Enterprise, AGOL \linebreak
+%            Geodatabase management:&
+%                PostgreSQL/PostGIS, ESRI Enterprise, AGOL \linebreak
 %               Proficient in \impt{Spatial modeling} to derive relationships \& patterns on the ground
 %               Proficient in managing ArcGIS Online (AGOL) and developing with Experience Builder \linebreak
 %               GeoServer administration, authorization, and configuration \linebreak
 %               Proficient in Collecting, cleaning, and preprocessing data from multiple sources for analysis \linebreak
 %               Proficient in processing geospatial data at scale\linebreak
-                \\
+%                \\
 %            Spatial data analysis:&
 %                %Extensive experience in creating, verifying \& converting between data types:
 %                %    GeoJSON, Geodatabase, Geopackage \linebreak
@@ -272,7 +293,7 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
                 REST API development with FastAPI, Flask \linebreak
 %                Experience with \impt{machine learning} with PyTorch \linebreak
 %                ETL Pipelines with Python, FME \linebreak
-                Orchestration with Airflow \linebreak
+%                Orchestration with Airflow \linebreak
 %                R programming and R Studio \linebreak
 %                Spatial \impt{ETL Pipelines}: FME Flow \& FME Form \linebreak
 %                Data Manipulation: Power Query, DAX \linebreak
@@ -329,12 +350,11 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
     {July 2025 - Present}
 
 \begin{jobtasklist}
-    \item Modernized and scaled production-grade geospatial data pipelines moving millions of daily spatial records; 
-            implemented automated data quality monitoring and testing infrastructure to guarantee high reliability 
-            for real-time analytics workflows.
-    \item Developed Python library to automate the testing of spatial data pipelines,
-            utilizing ESRI REST endpoints,
-            resulting in continuous standardized testing of pipelines and downstream integrations.
+    \item Managing spatial data pipelines at a major electric utility moving
+            \impt{millions of features daily}, ensuring high availability and
+            data quality through centralized orchestration and automated alerts.
+    \item Architected and deployed Python library to automate the testing of spatial data pipelines
+            resulting in faster testing and faster identification of pipeline issues.
 \end{jobtasklist}
 
 %------------------ Picarro ------------------%
@@ -346,10 +366,13 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
 
 \begin{jobtasklist}
     % Accomplished X as measured by Y by doing Z
-    \item Designed and implemented robust spatial ETL pipelines utilizing Safe Software FME Server,
-            Python, and ArcPy. 
-            Integrated diverse geospatial datasets to streamline data flow,
-            significantly \impt{enhancing data reliability} and reducing manual intervention.
+%    \item Designed and implemented robust spatial ETL pipelines with Python, and ArcPy.
+%            Integrated diverse geospatial datasets and to streamline data flow,
+%            significantly \impt{enhancing data reliability} and reducing manual intervention.
+    \item Designed and implemented automated, open-source
+        (Python/GeoPandas/GDAL/Fiona) \impt{spatial ETL pipelines}
+            to preprocess, align, and reformat streaming vector data,
+            ensuring data quality and reliability for critical downstream analytics applications.
 %    \item Enhanced spatial data \impt{ETL pipeline management and efficiency},
 %            improving data flow reliability and reducing manual intervention through custom Python,
 %            ArcPy, and FME monitoring and recovery tools.
@@ -359,9 +382,9 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
 %            consumption by \impt{optimizing data transfer processes} to ArcGIS Online
 %            (AGOL) and ArcGIS Enterprise Portal, ensuring real-time data
 %            availability for planning and public safety teams.
-    \item Streamlined \impt{high-volume geospatial data transfer} (hundreds of thousands of features daily) 
-            from core databases to ArcGIS Online (AGOL), 
-            resulting in real-time data availability for dynamic web mapping applications 
+    \item Streamlined \impt{high-volume geospatial data transfer} (hundreds of thousands of features daily)
+            %from core databases to ArcGIS Online (AGOL),
+            resulting in real-time data availability for dynamic web mapping applications
             through optimizing application APIs implemented with FME Server.
 
 %    \item Optimized application APIs to enable \impt{high-volume geospatial data transfer} (hundreds of thousands of features daily)
@@ -372,7 +395,9 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
 %            and ArcGIS Enterprise through the \impt{management and optimization of application APIs}.
 \end{jobtasklist}
 
-\vspace{20pt}
+%\vspace{20pt}
+
+\pagebreak
 
 %------------------ Congruex ------------------%
 \tagged{DATACV}{
@@ -395,17 +420,16 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
 %    \item Collaborated with cross-departmental teams to gather requirements and deliver effective GIS solutions,
 %            including supporting web-based GIS applications that
 %            improved \impt{data accessibility for critical infrastructure design}.
-    \item Led data platform development by deploying a \impt{scalable cloud-based API infrastructure}
-            (Python/FastAPI on Azure), serving as the foundation for 19
-            fully-cataloged spatial data services to enhance data accessibility and
-            data governance for critical infrastructure design.
-%    \item Led the development and deployment of a cloud-based API infrastructure (Python/FastAPI on Azure),
+    \item Led the development and deployment of a cloud-based API infrastructure (Python/FastAPI on Azure),
+            serving as the foundation for 19
+            fully-cataloged spatial data services to enhance data accessibility and data governance.
 %            delivering \impt{19 data analysis, reporting, and data management services}, providing critical business insights
 %            and improving data accessibility for telecommunications infrastructure design.
 %    \item Developed Python-based data loading tools (Jupyter Notebooks, GeoPandas, Rasterio, Folium) for the spatial data warehouse,
 %            integrating \impt{automated quality assurance procedures} to ensure data accuracy and accelerate reliable data integration.
-%    \item Developed Python-based data loading tools (Jupyter Notebooks, GeoPandas, Rasterio, Folium)
-%            for the spatial data warehouse, resulting in a more \impt{accurate and accelerated data integration process}.
+    \item Developed Python-based data management tools (GeoPandas, Rasterio, Folium)
+            for corporate spatial-data warehouse,
+            dramatically improving \impt{time to integrate and verify new data sources} and configure GeoServer.
 %    \item Trained GIS staff to support the management of the corporate mapping platform,
 %            ensuring the reliability and stability of the spatial database, map servers, and related systems.
 %    \item Developed and deployed Python-based tools and automations, including \impt{custom geoprocessing workflows} and data management scripts,
@@ -419,36 +443,53 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
 %            deployed on Azure with Docker and Python
 %    \item Developed reusable library in Python to automate the configuration and management of
 %            corporate mapping platform comprising more than 7000 lines of code
-    \item Architected containerized spatial ETL pipelines on Azure using Python and Airflow, 
-            \impt{processing 13M+ daily features} with automated data quality checks, 
-            ensuring reliable geospatial data for real-time analytics and internal dashboards.
+    \item Designed and implemented an automated, containerized spatial ETL pipeline on Azure,
+            incorporating custom algorithms for \impt{robust data cleaning and quality assurance},
+            systematically identifying and resolving data anomalies across over 13 million geospatial features daily
+            to ensure data integrity for complex scientific
+            applications built in Python with GeoPandas, Fiona, Rasterio, and Docker.
 %    \item Developed and implemented an automated, containerized spatial ETL pipeline on Azure
 %            for \impt{data cleaning and quality assurance},
 %            consolidating geospatial data from partner organizations,
 %            processing over 13 million features daily, and ensuring data integrity.
-    \item Facilitated \impt{end-user usability testing} with both technical and non-GIS stakeholders,
-        effectively translating complex geospatial concepts into actionable feedback for platform improvements and acting
-        as a critical bridge between departments.
-
+%    \item Facilitated \impt{end-user usability testing} with both technical and non-GIS stakeholders,
+%        effectively translating complex geospatial concepts into actionable feedback for platform improvements and acting
+%        as a critical bridge between departments.
 %    \item Managed ETL pipeline and API documentation in Confluence along with support requests in Jira
+    \item Sourced and aggregated publicly available LiDAR point clouds from disparate public domain sources,
+            building Python tools utilizing GDAL and Rasterio to clean, reformat,
+            and interpolate the data into highly accurate Digital Elevation Models (DEMs);
+            dramatically improved data coverage and availability for critical infrastructure design.
 \end{jobtasklist}
 
-%\pagebreak
-%%------------------ Freelance ------------------%
-%\tagged{DATACV}{
-%    \employer
-%        {Freelance}
-%        {San Diego, CA}
-%        {Data Analyst}
-%        {January 2019 - May 2020}
-%    }
-%\tagged{GISCV}{
-%    \employer
-%        {Freelance}
-%        {San Diego, CA}
-%        {GIS Data Analyst}
-%        {January 2019 - May 2020}
-%    }
+%------------------ Freelance ------------------%
+\tagged{DATACV}{
+    \employer
+        {Freelance}
+        {San Diego, CA}
+        {Data Analyst}
+        {January 2019 - May 2020}
+    }
+\tagged{GISCV}{
+    \employer
+        {Freelance}
+        {San Diego, CA}
+        {GIS Data Analyst}
+        {January 2019 - May 2020}
+    }
+
+\begin{jobtasklist}
+%       Accomplished X as measured by Y by doing Z
+%        \item Developed and deployed targeted surveys, providing insights into
+%                customer engagement and product utilization.
+        \item Boosted survey campaign effectiveness by consulting closely with clients to develop targeted
+                strategies, \impt{increasing client satisfaction} and generating actionable insights.
+        \item Delivered comprehensive insights into \impt{customer engagement} and product utilization by developing
+                and deploying targeted surveys, resulting in improved client understanding of their market.
+        \item Automated the end-to-end process for meticulous data
+                \impt{verification, cleaning, and consolidation} using Python,
+                significantly reducing data errors and ensuring high-quality, accurate data for timely analysis and reporting.
+\end{jobtasklist}
 %
 %\begin{jobtasklist}
 %    % Accomplished X as measured by Y by doing Z
@@ -516,6 +557,50 @@ Proven experience working with current versions of QGIS and ArcGIS Pro.
 %            for contributing to a cross-departmental team that significantly
 %            improved transit vehicle farebox data collection.
 %\end{jobtasklist}
+%        \item Deployed interactive dashboards and visualizations
+%                to facilitate access to data and develop insights.
+
+%        \item Accelerated data analysis turnaround and increased processing scale by automating the end-to-end process for
+%                \impt{data verification, cleaning, consolidation, and analysis}
+%                using Python and ArcPy, reducing manual effort and enhancing reporting efficiency.
+%        \item Provided clear, digestible data analysis by developing Microsoft Power BI
+%                reports and visualizations that summarized collected data, enabling
+%                clients to make more \impt{informed strategic decisions}.
+
+
+%------------------ BC Transit ------------------%
+\employer
+    {BC Transit}
+    {Victoria, Canada}
+    {Geospatial Data Analyst}
+    {January 2013 - October 2018}
+
+\begin{jobtasklist}
+    \item Collaborated closely with planning and administrative staff to develop GIS maps and suitability analyses,
+        consolidating relevant, up-to-date spatial information to \impt{directly support regional planning}, asset
+            management, and capital improvement projects.
+    \item Built a Python-based spatial ETL pipeline
+            \impt{processing over 150,000 transactions per day}
+            from a fleet of 700+ vehicles, providing detailed insights into transport ridership patterns.
+%    \item Developed a \impt{performance metrics system} to monitor the security and
+%            quality of regional reporting systems, improving alerting and
+%            notification for farebox security incidents and technical problems.
+%    \item Created a continuous monitoring system with multiple departments,
+%            ensuring an uninterrupted stream of ridership data that provided
+%            up-to-date statistical reports and analysis.
+%    \item Conducted advanced data modeling and analysis on complex ridership data, utilizing sophisticated
+%            GIS algorithms to generate insightful reports that directly supported strategic decision-making and
+%            demonstrated the ability to \impt{translate raw data into actionable intelligence} for stakeholders solving real-world transportation
+%            problems.
+    \item Conducted \impt{advanced geospatial data modeling} and analysis on complex datasets,
+            to uncover strategic insights for public policy initiatives,
+            enabling data-driven decision-making for stakeholders tackling real-world transportation problems.
+%        \item Conducted ongoing GIS data maintenance, manipulation, analysis, extraction, and generation
+%                and managing organizational geospatial data warehouse.
+    \item Received the 2015 Corporate Recognizing \impt{Excellence and Values Award}
+            for contributing to a cross-departmental team that significantly
+            improved transit vehicle farebox data collection.
+\end{jobtasklist}
 
 
 \vspace{25pt}
