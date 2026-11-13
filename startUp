@@ -1,0 +1,6 @@
+#/bin/bash
+
+/usr/bin/gvim *.tex &
+/usr/bin/gvim *.txt &
+
+echo "Gvim launched"
