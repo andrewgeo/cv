@@ -1,6 +1,12 @@
-#/bin/bash
+#!/usr/bin/env bash
 
-/usr/bin/gvim *.tex &
-/usr/bin/gvim *.txt &
+shopt -s nullglob
+files=( *.tex *.txt )
 
-echo "Gvim launched"
+if ((${#files[@]} == 0)); then
+    echo "No .tex or .txt files found."
+    exit 0
+fi
+
+gvim -- "${files[@]}" &
+echo "Launching gvim with ${#files[@]} file(s)"
