@@ -1,6 +1,5 @@
-_private.tex
-_ar_sig.png
-transcript/
-fonts/
-tutorials/
 *.png
+_private.tex
+fonts/
+transcript/
+tutorials/
