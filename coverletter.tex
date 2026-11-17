@@ -1,19 +1,11 @@
 \documentclass[letterpaper]{article}
-    %\usepackage[margin=1.1in]{geometry}
     \usepackage[top=0.9in,bottom=0.75in,left=1in,right=1in]{geometry}
-    %\usepackage{fullpage}
-    \usepackage{textcomp}
-    \usepackage[T1]{fontenc}
-    \usepackage[utf8]{inputenc}
     \usepackage{hyperref}
     \usepackage{ulem}  % underlining
     \usepackage{fontspec}
     \usepackage{setspace}
 
-    % insert QR code
-    %   https://tex.stackexchange.com/questions/66231/how-to-put-a-picture-to-the-top-right-of-a-page
     \usepackage{graphicx}
-    \usepackage{eso-pic}
 
     \newfontfamily\Lato[
         Path = fonts/,
@@ -37,21 +29,11 @@
     \raggedright
     \setlength{\parskip}{1em}
 
-    \newenvironment{itemlist}
-        {
-            \vspace{-12pt}
-            \begin{itemize} \itemsep 0pt
-        }{
-            \end{itemize}
-            \vspace{-3pt}
-        }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % VARIABLES
 
     % PERSONAL DETAILS
     %    CVname
-    %    CVaddresswrap
     %    CVemail
     %    CVphone
     \input _private.tex
@@ -71,21 +53,14 @@
         pdfsubject={\JobTitle}
     }
 
-    \hyphenation{
-        }
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DOCUMENT
 
 \begin{document}
 \large
-%\JobManager \\
-%\JobManagerTitle \\
 \textbf{\JobCompany} \\
 
-\null\hfill November 4, 2026 \\
+\null\hfill \today \\
 Subject: Application for \JobTitle
 
 Dear Hiring Team at {\JobCompany},
@@ -118,17 +93,12 @@ I welcome the opportunity to discuss how my background in GIS
 development and spatial engineering aligns with your upcoming program goals. 
 Thank you for your consideration.
 
-\iffalse
-\fi
-
 Sincerely,\\
     \hspace{1em}
     \includegraphics[height=1.2cm]{_ar_sig.png} \\
     \CVsigname \\
     \small
-    %\CVaddresswrap \\
-%    Tel: \CVphone \\
-    Tel: 858.477.8807\\
+    Tel: \CVphone\\
     email: \CVemail
 
 \end{document}
