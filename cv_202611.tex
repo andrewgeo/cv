@@ -50,8 +50,8 @@
             {\large \textbf {#2}}\\
             \vspace{4pt}
             #3 $\cdot$\enspace #4 $\cdot$\enspace #5\\
-            Blog: #6 $\cdot$\enspace LinkedIn: #7
-            $\cdot$\enspace U.S. Citizen
+            Blog: #6 $\cdot$\enspace LinkedIn: #7\\
+            U.S. Citizen (Eligible for Federal Position of Trust)
 %            LinkedIn: #7
         \end{center}
     }
@@ -83,7 +83,7 @@
 
     \newenvironment{skillslist}
         {
-            \hspace*{-0.07in}\begin{tabular}[t]{ l L{5.17in} }
+            \hspace*{-0.07in}\begin{tabular}[t]{ l L{4.92in} }
         }{
             \end{tabular}
         }
@@ -156,43 +156,47 @@
 %Who , business functions / core competencies / unique value prop
 \tagged{GISCV}{
 {\JobTitle}
-with 10+ years of experience performing complex GIS analysis and building web-based
-geospatial applications for transportation, utility, and telecommunications infrastructure.
-Skilled in Esri’s desktop and web GIS suite (ArcGIS Pro, ArcGIS Online, ArcGIS Enterprise),
-Python, and FME Flow (Server), integrating geodatabases, web services,
-and raster data through automated ETL pipelines on Azure.
-Works directly with clients and subject matter experts to translate
-business needs into data analysis requirements, delivering maps, dashboards,
-and spatial REST APIs that support planning decisions.
+with 10+ years of experience in the design, development, and maintenance of GIS
+solutions and hosted geospatial services for utility, telecommunications, and
+transportation clients. 
+Deep expertise in ArcGIS Pro, ArcGIS Online, Portal for
+ArcGIS, and ArcGIS Enterprise, with web app development in ArcGIS Experience
+Builder and the ArcGIS Maps SDK for JavaScript. 
+Extensive workflow automation
+with ArcPy and the ArcGIS API for Python. 
+Background in geodatabase design and
+cross-platform systems integration with FME Flow, PostGIS, and Azure.
+Professional experience consulting with clients and project teams on
+requirements gathering, feasibility analysis, and tool recommendations, within
+Agile teams and GitHub-based workflows.
 }
 
 %================== Skills ==================%
 \header{SKILLS}
-    \begin{taggedblock}{GISCV}
-        \begin{skillslist}
-            GIS Applications:&
-                ArcGIS Pro, QGIS, GeoServer \linebreak
-                ArcGIS Online, ArcGIS Enterprise, PostgreSQL/PostGIS \linebreak
-            \\
-            Programming \& Scripting:&
-                Python, ArcPy, NumPy, Pandas, GeoPandas, Shapely, Rasterio, FastAPI \linebreak
-                ArcGIS Maps SDK for JavaScript, React, HTML/CSS \linebreak
-            \\
-            ETL \& Data Architecture:&
-                Python-based spatial ETL pipelines, spatial REST APIs \linebreak
-                FME Flow (Server) \& FME Form, ArcGIS Pro ModelBuilder \linebreak
-                Geodatabase management, spatial SQL functions \linebreak
-            \\
-            Cloud \& DevOps:&
-                AWS (Certified Cloud Practitioner) \linebreak
-                Azure (Certified Fundamentals) \linebreak
-                Docker, containerization, Terraform IaC \linebreak
-                GitHub, PyTest, Linux/bash scripting \linebreak
-            \\
-            Methodologies:&
-                Agile, Jira sprint planning \linebreak
-                Client needs analysis, cross-functional stakeholder engagement \linebreak
-
+    \begin{skillslist}
+        GIS Platforms:&
+            ArcGIS Pro, ArcGIS Online, Portal for ArcGIS, ArcGIS Enterprise, \linebreak
+            ArcGIS Experience Builder (Web Experience Builder), QGIS, GeoServer
+            \\[15pt]
+        Web \& Services:&
+            Hosted feature layers, OGC web services, spatial REST APIs, \linebreak
+            ArcGIS Maps SDK for JavaScript, JavaScript, React, HTML/CSS
+            \\[15pt]
+        Programming:&
+            Python, ArcPy, ArcGIS API for Python, NumPy, Pandas, GeoPandas, \linebreak
+            Shapely, Fiona, Rasterio, FastAPI
+            \\[15pt]
+        Data \& Databases:&
+            Geodatabase design and management, PostgreSQL/PostGIS, spatial SQL, \linebreak
+            FME Flow (Server), FME Form, ModelBuilder, spatial ETL
+            \\[15pt]
+        Cloud \& DevOps:&
+            Azure, AWS, Docker, Terraform, GitHub workflow (code review, CI/CD), \linebreak
+            PyTest, Linux/bash
+            \\[15pt]
+        Methodologies:&
+            Agile, Jira sprint planning, requirements gathering, feasibility analysis, \linebreak
+            software evaluation, technical documentation and user manuals
 %            GIS Applications:&
 %                ArcGIS, QGIS, ArcGIS Pro, ArcGIS Online, ArcGIS Enterprise \linebreak
 %                - including Spatial Analyst, 3D Analyst, and Network Analyst extensions \linebreak
@@ -258,8 +262,9 @@ and spatial REST APIs that support planning decisions.
 %                Engaged with planners, clients, and partners to identify data
 %                needs, plan data collection projects, refine analysis and models
 %                \\
-        \end{skillslist}
-    \end{taggedblock}
+    \end{skillslist}
+
+
 
 
 
@@ -276,16 +281,17 @@ and spatial REST APIs that support planning decisions.
     {July 2025 -- Present}
 
 \begin{jobtasklist}
-    \item Translated utility client requirements into FME Flow (Server), Python ETL pipelines
-            and REST APIs that process \impt{millions of infrastructure features daily}
-            for an Esri Utility Network migration.
+\item Translated utility client requirements into ETL pipelines 
+        (FME Flow and Python) and REST APIs that process \impt{millions of infrastructure features}
+        daily for an Esri Utility Network migration.
 %    \item Partnered with utility stakeholders to analyze client needs
 %            and optimize operational efficiency,
 %            designing scalable FME/Python ETL pipelines and REST APIs
 %            \impt{processing millions of daily features} during an Esri Utility Network migration.
-    \item Developed custom ArcGIS Pro Python Toolboxes and automation scripts with
-            the ArcGIS API for Python;
-            added PyTest unit tests and GitHub-based CI/CD to speed releases and catch regressions early.
+    \item Developed \impt{custom ArcGIS Pro Python Toolboxes} and automation scripts
+            with ArcPy and the ArcGIS API for Python in a VDI environment. 
+            Added PyTest unit tests and GitHub-based CI/CD within Agile sprints to speed
+            releases and catch regressions early.
 \end{jobtasklist}
 
 %------------------ Picarro ------------------%
@@ -301,21 +307,20 @@ and spatial REST APIs that support planning decisions.
 %            Integrated diverse geospatial datasets and to streamline data flow,
 %            significantly \impt{enhancing data reliability} and reducing manual intervention.
     \item Automated CRS transformation, normalization, and validation of
-            \impt{high-volume vector data} in Python before publishing it
-            to ArcGIS Online web services via REST APIs.
+            \impt{high-volume vector data} with Python and ArcPy.
+            Published and managed hosted feature layers in ArcGIS Online and Portal for ArcGIS
+            via REST APIs.
 %    \item Enhanced spatial data \impt{ETL pipeline management and efficiency},
 %            improving data flow reliability and reducing manual intervention through custom Python,
 %            ArcPy, and FME monitoring and recovery tools.
-    \item Created a reusable Python library that standardized connections to corporate data sources and systems, 
+    \item Created a reusable Python library that standardized connections to corporate data sources and systems,
             letting new ETL processes be built from shared components instead of custom code.
 %    \item Supported agency-wide web mapping applications and data
 %            consumption by \impt{optimizing data transfer processes} to ArcGIS Online
 %            (AGOL) and ArcGIS Enterprise Portal, ensuring real-time data
 %            availability for planning and public safety teams.
-    \item Optimized geospatial \impt{data transfers of over 100,000 features daily}
-            via FME Flow (Server), enabling real-time data 
-            in enterprise web maps.
-
+    \item Optimized FME Flow transfers of over \impt{100,000 geospatial features daily} 
+            to keep enterprise web maps current.
 %    \item Optimized application APIs to enable \impt{high-volume geospatial data transfer} (hundreds of thousands of features daily)
 %            from core databases to ArcGIS Online (AGOL) and ArcGIS Enterprise,
 %            directly supporting dynamic web mapping applications and data consumption.
@@ -342,17 +347,18 @@ and spatial REST APIs that support planning decisions.
 %    \item Collaborated with cross-departmental teams to gather requirements and deliver effective GIS solutions,
 %            including supporting web-based GIS applications that
 %            improved \impt{data accessibility for critical infrastructure design}.
-    \item Led end-to-end deployment of a \impt{cloud GIS API platform} (Python/FastAPI on Azure),
-            publishing 19 cataloged spatial REST web services;
-            wrote end-user documentation and delivered demos and technical support to engineering teams.
-%            delivering \impt{19 data analysis, reporting, and data management services}, providing critical business insights
-%            and improving data accessibility for telecommunications infrastructure design.
+    \item Led end-to-end deployment of a \impt{cloud GIS API platform} 
+            (Python/FastAPI on Azure) that published 19 cataloged spatial REST web services. 
+            Wrote end-user documentation and delivered demos and technical support to
+            engineering teams.
 %    \item Developed Python-based data loading tools (Jupyter Notebooks, GeoPandas, Rasterio, Folium) for the spatial data warehouse,
 %            integrating \impt{automated quality assurance procedures} to ensure data accuracy and accelerate reliable data integration.
-    \item Designed scalable Python-based tools for spatial data editing and management, using GitHub for collaborative code reviews,
-            version control, and CI/CD best practices to ensure reliable production releases.
-    \item Trained multiple technical and non-GIS users and \impt{led usability testing on web GIS applications};
-            resolved GeoServer and PostgreSQL integration issues to keep spatial services available.
+    \item Designed scalable Python and ArcPy tools for spatial data editing and
+            management in Agile sprints, using GitHub for code reviews, version
+            control, and CI/CD.
+    \item Trained GIS and non-GIS users and led
+            \impt{usability testing on web GIS applications}.
+            Debugged and troubleshot GeoServer and PostgreSQL/PostGIS integration issues to keep OGC web services available.
 %    \item Developed and deployed Python-based tools and automations, including \impt{custom geoprocessing workflows} and data management scripts,
 %            to enhance the speed and efficiency of spatial web application support and data integrity across GeoServer and PostgreSQL.
 %    \item Improved the speed and efficiency of support staff tasks by streamlining
@@ -364,10 +370,10 @@ and spatial REST APIs that support planning decisions.
 %            deployed on Azure with Docker and Python
 %    \item Developed reusable library in Python to automate the configuration and management of
 %            corporate mapping platform comprising more than 7000 lines of code
-    \item Engineered an automated, containerized spatial ETL pipeline on Azure
-            (Python, GeoPandas, Fiona, Rasterio, Docker) incorporating custom spatial intersect
-            validation and QA algorithms to resolve boundary anomalies
-            across \impt{13 million features per day}.
+    \item Engineered an automated, containerized spatial ETL pipeline on Azure 
+            (Python, GeoPandas, Fiona, Rasterio, Docker) with custom
+            intersect validation and QA that resolved boundary anomalies across
+            \impt{13 million features per day}.
 %    \item Developed and implemented an automated, containerized spatial ETL pipeline on Azure
 %            for \impt{data cleaning and quality assurance},
 %            consolidating geospatial data from partner organizations,
@@ -391,14 +397,13 @@ and spatial REST APIs that support planning decisions.
 %       Accomplished X as measured by Y by doing Z
 %        \item Developed and deployed targeted surveys, providing insights into
 %                customer engagement and product utilization.
-        \item Worked directly with clients to translate business needs
-                into GIS data analysis requirements,
-                delivering maps and survey analytics that improved campaign effectiveness.
-        \item Built \impt{interactive web GIS dashboards}
-                (JavaScript, HTML/CSS, Web APIs)
-                to visualize survey results for executive clients,
-                while automating end-to-end data cleaning pipelines using Python
-                to reduce data errors.
+    \item Consulted with clients to translate business needs into GIS requirements,
+            assess project feasibility, recommend software, and design geodatabases.
+            Delivered maps and survey analytics to support client campaign planning.
+    \item Built \impt{interactive web GIS apps} and dashboards with ArcGIS Experience
+            Builder on ArcGIS Online, JavaScript, HTML/CSS, and Web APIs to
+            visualize survey results for executive clients. 
+            Automated end-to-end data cleaning in Python.
 \end{jobtasklist}
 
 
@@ -410,9 +415,10 @@ and spatial REST APIs that support planning decisions.
     {January 2013 -- October 2018}
 
 \begin{jobtasklist}
-    \item Collected and edited spatial data for \impt{urban planning analyses};
-            produced digital and hard-copy maps and capital-improvement
-            recommendations for executives and regional stakeholders.
+    \item Built geodatabases and maintained GIS user manuals supporting
+            urban planning analyses. 
+            Produced digital and hard-copy maps and
+            capital-improvement recommendations for executives and regional stakeholders.
     \item Implemented a Python-based spatial ETL pipeline
             \impt{processing over 150,000 transactions per day}
             from a fleet of 700+ vehicles, providing detailed insights into transit ridership patterns.
@@ -431,12 +437,12 @@ and spatial REST APIs that support planning decisions.
 %        \item Conducted ongoing GIS data maintenance, manipulation, analysis, extraction, and generation
 %                and managing organizational geospatial data warehouse.
     \item Received BC Transit’s 2015 Recognizing \impt{Excellence and Values Award}
-            for contributing to a cross-departmental team that significantly
-            improved transit vehicle farebox data collection.
+            for contributing to a cross-departmental team that
+            improved data collection workflow for transit vehicle fareboxes.
 \end{jobtasklist}
 
 
-\vspace{25pt}
+\vspace{-1.3pt} % matches gap above Certifications
 
 %================== Education ==================%
 \header{EDUCATION}
@@ -444,23 +450,21 @@ and spatial REST APIs that support planning decisions.
         {Queen's University}
         {Kingston, Canada}
         {Master of Science, Computer Science}
-
     \university
         {University of Ottawa}
         {Ottawa, Canada}
         {Graduate Diploma, International Development}
-
     \university
         {Queen's University}
         {Kingston, Canada}
         {Bachelor of Science, Psychology \& Computer Science}
-    \university
-        {Udacity Nanodegree (Bertelsmann Scholarship)}
-        {}
-        {AI Programming with Python}
-    \university
-        {Udacity Nanodegree (Bertelsmann Scholarship)}
-        {}
-        {Cloud Architect using Microsoft Azure}
+
+
+%================== Certifications ==================%
+\header{CERTIFICATIONS \& TRAINING}
+    AWS Certified Cloud Practitioner\\
+    Microsoft Certified: Azure Fundamentals\\
+    Udacity Nanodegree: AI Programming with Python\\
+    Udacity Nanodegree: Cloud Architect using Microsoft Azure
 
 \end{document}
